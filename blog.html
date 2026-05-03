@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Blog — AK Outdoor Group Travel</title>
+  <meta name="description" content="Vacation tips, destination guides, and timeshare rental insights from AK Outdoor Group Travel. Save more on your next luxury resort stay." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green-dark:  #063d30;
+      --green-mid:   #0F6E56;
+      --green:       #1D9E75;
+      --green-light: #5DCAA5;
+      --green-pale:  #E1F5EE;
+      --text:        #1a1a18;
+      --text-mid:    #4a4a46;
+      --text-muted:  #8a8a84;
+      --border:      rgba(0,0,0,0.09);
+      --bg:          #f8f8f5;
+      --bg-card:     #ffffff;
+      --amber:       #c17f24;
+      --radius:      10px;
+      --radius-lg:   16px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; overflow-x: hidden; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(6,61,48,0.9); backdrop-filter: blur(16px);
+      padding: 0 52px; height: 66px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+    .logo-mark { width: 34px; height: 34px; background: var(--green); border-radius: 9px; display: flex; align-items: center; justify-content: center; }
+    .logo-mark svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .logo-name { font-family: 'DM Serif Display', serif; font-size: 15px; color: #fff; white-space: nowrap; }
+    .logo-name span { color: var(--green-light); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 14px; color: rgba(255,255,255,0.72); text-decoration: none; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: #fff; }
+    .nav-cta { background: var(--green); color: #fff; border: none; border-radius: var(--radius); padding: 10px 22px; font-size: 14px; font-weight: 500; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; transition: background .2s, transform .15s; }
+    .nav-cta:hover { background: var(--green-mid); transform: translateY(-1px); }
+
+    /* BLOG HERO */
+    .blog-hero {
+      background: var(--green-dark);
+      padding: 130px 52px 70px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-hero::before {
+      content: '';
+      position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(29,158,117,0.15) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .blog-hero .eyebrow { font-size: 11px; font-weight: 500; color: var(--green-light); text-transform: uppercase; letter-spacing: 1.6px; margin-bottom: 14px; position: relative; z-index: 1; }
+    .blog-hero h1 { font-family: 'DM Serif Display', serif; font-size: 48px; font-weight: 400; color: #fff; margin-bottom: 16px; letter-spacing: -.5px; position: relative; z-index: 1; }
+    .blog-hero p { font-size: 17px; color: rgba(255,255,255,0.6); max-width: 540px; margin: 0 auto; font-weight: 300; line-height: 1.7; position: relative; z-index: 1; }
+
+    /* BLOG CONTENT */
+    .blog-content {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 64px 52px 100px;
+    }
+
+    /* CONTACT BAR */
+    .contact-bar { background: var(--green-mid); padding: 22px 52px; display: flex; justify-content: center; align-items: center; gap: 52px; flex-wrap: wrap; }
+    .contact-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.9); font-size: 14px; text-decoration: none; transition: color .2s; }
+    .contact-item:hover { color: #fff; }
+    .contact-item svg { width: 17px; height: 17px; stroke: rgba(255,255,255,0.65); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+
+    /* FOOTER */
+    footer { background: #081a14; padding: 36px 52px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { font-family: 'DM Serif Display', serif; font-size: 19px; color: #fff; }
+    .footer-logo span { color: var(--green-light); }
+    .footer-mid { font-size: 13px; color: rgba(255,255,255,0.35); text-align: center; }
+    .footer-links { display: flex; gap: 22px; }
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,0.35); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--green-light); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .blog-hero { padding: 110px 20px 50px; }
+      .blog-hero h1 { font-size: 32px; }
+      .blog-content { padding: 40px 20px 60px; }
+      .contact-bar { padding: 20px; gap: 20px; }
+      footer { padding: 24px 20px; flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="AK Outdoor Group Travel" style="height:48px;width:auto;object-fit:contain;" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#why">Why us</a></li>
+    <li><a href="index.html#how">How it works</a></li>
+    <li><a href="index.html#destinations">Destinations</a></li>
+    <li><a href="index.html#reviews">Reviews</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+  </ul>
+  <a href="index.html#quote" class="nav-cta">Get a free quote</a>
+</nav>
+
+<!-- BLOG HERO -->
+<div class="blog-hero">
+  <div class="eyebrow">Travel tips &amp; insights</div>
+  <h1>The AK Outdoor Travel Blog</h1>
+  <p>Destination guides, money-saving tips, and everything you need to know about luxury resort stays at owner-direct rates.</p>
+</div>
+
+<!-- SORO BLOG EMBED -->
+<div class="blog-content">
+  <div id="soro-blog"></div>
+  <script src="https://app.trysoro.com/api/embed/ffca31d8-ac0d-48c9-9af7-bff2900e1747" defer></script>
+</div>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar">
+  <a href="tel:+12398237286" class="contact-item">
+    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    (239) 823-7286
+  </a>
+  <a href="mailto:sales@akoutdoorgrouptravel.com" class="contact-item">
+    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    sales@akoutdoorgrouptravel.com
+  </a>
+  <div class="contact-item">
+    <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Winter Park, Florida
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">AK <span>Outdoor</span> Group Travel LLC</div>
+  <div class="footer-mid">© 2026 AK Outdoor Group Travel, LLC · Winter Park, Florida · Premium Timeshare Vacation Rentals</div>
+  <div class="footer-links">
+    <a href="#">Privacy policy</a>
+    <a href="#">Terms of service</a>
+  </div>
+</footer>
+
+</body>
+</html>
