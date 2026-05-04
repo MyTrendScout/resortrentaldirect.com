@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /vacation.html
+
+Sitemap: https://resortrentaldirect.com/sitemap.xml
