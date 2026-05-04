@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Resort Rental Direct — Owner-Direct Rentals at Marriott, Hilton, Wyndham, Disney, Hyatt</title>
-<meta name="description" content="Owner-direct timeshare rentals at top-tier resorts — Marriott, Hilton, Wyndham, Hyatt, Disney, Westin. Same-day quotes weekdays. Zero booking fees. A service of The Timeshare Brokers, LLC, est. 2015." />
+<meta name="description" content="Owner-direct timeshare rentals at top-tier resorts — Marriott, Hilton, Wyndham, Hyatt, Disney, Westin. Same-day quotes weekdays. Zero booking fees. Est. 2015 · Orlando, Florida." />
 <link rel="canonical" href="https://resortrentaldirect.com/" />
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://resortrentaldirect.com/" />
 <meta property="og:title" content="Resort Rental Direct — Owner-Direct Resort Rentals" />
-<meta property="og:description" content="Owner-direct timeshare rentals at top-tier resorts. Same-day quotes weekdays. Zero booking fees. A service of The Timeshare Brokers, LLC, est. 2015." />
+<meta property="og:description" content="Owner-direct timeshare rentals at top-tier resorts. Same-day quotes weekdays. Zero booking fees. Est. 2015 · Orlando, Florida." />
 <meta property="og:site_name" content="Resort Rental Direct" />
 
 <meta name="twitter:card" content="summary_large_image" />
@@ -135,7 +135,8 @@ nav {
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #06182a 100%);
+  background: linear-gradient(135deg, rgba(10,31,51,0.55) 0%, rgba(14,44,71,0.48) 60%, rgba(6,24,42,0.60) 100%),
+              var(--hero-bg, url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=80&fit=crop&crop=center')) center/cover no-repeat;
   padding: 140px 52px 100px;
   position: relative;
   overflow: hidden;
@@ -296,12 +297,19 @@ section { padding: 100px 52px; }
 #destinations { background: var(--white); }
 .dest-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 56px; }
 .dest-card {
-  padding: 24px; background: var(--cream);
+  background: var(--cream);
   border: 1px solid var(--border-light); border-radius: var(--radius);
-  transition: border-color .2s, transform .2s;
+  overflow: hidden;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
 }
-.dest-card:hover { border-color: rgba(176,140,62,0.3); transform: translateY(-1px); }
-.dest-card h3 { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 8px; letter-spacing: -.1px; }
+.dest-card:hover { border-color: rgba(176,140,62,0.3); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20,14,4,0.08); }
+.dest-thumb {
+  width: 100%; height: 160px;
+  object-fit: cover; object-position: center;
+  display: block;
+}
+.dest-body { padding: 20px; }
+.dest-card h3 { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 6px; letter-spacing: -.1px; }
 .dest-card p { font-size: 13px; color: var(--ink-mid); line-height: 1.55; }
 .dest-extra {
   font-size: 14px; color: var(--ink-mid);
@@ -363,6 +371,13 @@ details[open] .faq-q::after { content: '−'; }
 /* ABOUT */
 #about { background: var(--bg); }
 .about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: start; margin-top: 56px; }
+.about-photo {
+  width: 100%; height: 220px;
+  object-fit: cover; object-position: center;
+  border-radius: var(--radius-lg);
+  margin-bottom: 28px;
+  display: block;
+}
 .about-text p { font-size: 16px; color: var(--ink-mid); line-height: 1.85; margin-bottom: 18px; }
 .about-text p strong { color: var(--navy); font-weight: 600; }
 .about-card {
@@ -509,6 +524,24 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
   .brand-list { justify-content: flex-start; gap: 24px; }
 }
 </style>
+<script>
+(function(){
+  var photos = [
+    'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=80&fit=crop&crop=center', // luxury resort pool
+    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1920&q=80&fit=crop&crop=center', // infinity pool ocean
+    'https://images.unsplash.com/photo-1540541338537-71acf7e3b8cb?w=1920&q=80&fit=crop&crop=center', // tropical resort pool
+    'https://images.unsplash.com/photo-1439130490301-25e322d88054?w=1920&q=80&fit=crop&crop=center', // beach resort chairs
+    'https://images.unsplash.com/photo-1582610116397-edb318620f90?w=1920&q=80&fit=crop&crop=center', // infinity pool sunset
+    'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1920&q=80&fit=crop&crop=center', // beach house ocean view
+    'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=1920&q=80&fit=crop&crop=center', // ocean infinity pool
+    'https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=1920&q=80&fit=crop&crop=center', // luxury pool villa
+    'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1920&q=80&fit=crop&crop=center', // resort beach sunset
+    'https://images.unsplash.com/photo-1535913989690-f90e1c2d4cfa?w=1920&q=80&fit=crop&crop=center'  // infinity pool ocean view
+  ];
+  var pick = photos[Math.floor(Math.random() * photos.length)];
+  document.documentElement.style.setProperty('--hero-bg', "url('" + pick + "')");
+})();
+</script>
 </head>
 <body>
 
@@ -530,7 +563,7 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
 <section class="hero">
   <div class="hero-inner">
     <div>
-      <div class="hero-eyebrow">A Service of The Timeshare Brokers, LLC · Est. 2015</div>
+      <div class="hero-eyebrow">Est. 2015 · Orlando, Florida</div>
       <h1>Luxury resorts at <em>owner-direct</em> rates.</h1>
       <p class="hero-sub">Marriott, Hilton, Wyndham, Hyatt, Disney, Westin — at a fraction of nightly rates, booked directly through verified owners. No booking fees. No marketplace runaround.</p>
 
@@ -557,7 +590,7 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
 
     <div class="trust-card">
       <h3>By the numbers</h3>
-      <div class="trust-sub">The Timeshare Brokers, LLC · operating since 2015</div>
+      <div class="trust-sub">Resort Rental Direct · Est. 2015</div>
       <div class="trust-stats">
         <div class="trust-stat"><div class="ts-num">11+</div><div class="ts-lbl">years matching travelers with resort rentals</div></div>
         <div class="trust-stat"><div class="ts-num">80+</div><div class="ts-lbl">branded resort properties in our network</div></div>
@@ -565,7 +598,7 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
         <div class="trust-stat"><div class="ts-num">$0</div><div class="ts-lbl">booking fees, ever</div></div>
       </div>
       <div class="trust-foot">
-        Direct-to-consumer brand of <a href="https://www.thetimesharebrokers.com/" target="_blank" rel="noopener">The Timeshare Brokers, LLC</a> · Orlando, FL
+        Based in Orlando, FL · Est. 2015
       </div>
     </div>
   </div>
@@ -639,12 +672,30 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
     <p class="section-sub">A working sample. We have access to 80+ branded properties beyond this list.</p>
 
     <div class="dest-grid">
-      <div class="dest-card"><h3>Orlando &amp; Disney</h3><p>Marriott Grande Vista, Wyndham Bonnet Creek, Disney Vacation Club, Hilton Sea World</p></div>
-      <div class="dest-card"><h3>Hawaii</h3><p>Marriott Maui Ocean Club, Hilton Hawaiian Village, Westin Ka'anapali, Hyatt Ka'anapali</p></div>
-      <div class="dest-card"><h3>Aruba &amp; Caribbean</h3><p>Marriott Aruba Surf Club, Divi Aruba, Atlantis Bahamas, St. Kitts properties</p></div>
-      <div class="dest-card"><h3>Ski &amp; Mountain</h3><p>Lake Tahoe, Vail, Breckenridge (Hilton Valdoro), Park City (Hilton Sunrise)</p></div>
-      <div class="dest-card"><h3>Coastal U.S.</h3><p>Myrtle Beach, Daytona Beach, Hilton Head, Destin, Panama City Beach, San Diego</p></div>
-      <div class="dest-card"><h3>City &amp; Other</h3><p>Las Vegas, Washington D.C. (Hilton Club), Branson, Gatlinburg, Cabo San Lucas, Cancún</p></div>
+      <div class="dest-card">
+        <img class="dest-thumb" src="https://images.unsplash.com/photo-1575089776834-8be34696ffb9?w=600&q=80&fit=crop&crop=center" alt="Orlando resort pool" loading="lazy" />
+        <div class="dest-body"><h3>Orlando &amp; Disney</h3><p>Marriott Grande Vista, Wyndham Bonnet Creek, Disney Vacation Club, Hilton Sea World</p></div>
+      </div>
+      <div class="dest-card">
+        <img class="dest-thumb" src="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=600&q=80&fit=crop&crop=center" alt="Hawaii beach" loading="lazy" />
+        <div class="dest-body"><h3>Hawaii</h3><p>Marriott Maui Ocean Club, Hilton Hawaiian Village, Westin Ka'anapali, Hyatt Ka'anapali</p></div>
+      </div>
+      <div class="dest-card">
+        <img class="dest-thumb" src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=600&q=80&fit=crop&crop=center" alt="Aruba Caribbean beach" loading="lazy" />
+        <div class="dest-body"><h3>Aruba &amp; Caribbean</h3><p>Marriott Aruba Surf Club, Divi Aruba, Atlantis Bahamas, St. Kitts properties</p></div>
+      </div>
+      <div class="dest-card">
+        <img class="dest-thumb" src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=80&fit=crop&crop=center" alt="Ski mountain resort" loading="lazy" />
+        <div class="dest-body"><h3>Ski &amp; Mountain</h3><p>Lake Tahoe, Vail, Breckenridge (Hilton Valdoro), Park City (Hilton Sunrise)</p></div>
+      </div>
+      <div class="dest-card">
+        <img class="dest-thumb" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80&fit=crop&crop=center" alt="Coastal beach USA" loading="lazy" />
+        <div class="dest-body"><h3>Coastal U.S.</h3><p>Myrtle Beach, Daytona Beach, Hilton Head, Destin, Panama City Beach, San Diego</p></div>
+      </div>
+      <div class="dest-card">
+        <img class="dest-thumb" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80&fit=crop&crop=center" alt="City skyline hotel" loading="lazy" />
+        <div class="dest-body"><h3>City &amp; Other</h3><p>Las Vegas, Washington D.C. (Hilton Club), Branson, Gatlinburg, Cabo San Lucas, Cancún</p></div>
+      </div>
     </div>
 
     <div class="dest-extra"><strong>Don't see your destination?</strong> Our network covers properties across the U.S., the Caribbean, Mexico, and select international markets. Tell us where you want to go and we'll see what's available.</div>
@@ -655,7 +706,7 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
   <div class="section-inner">
     <div class="section-eyebrow">What Travelers Say</div>
     <h2 class="section-title">Real reviews from <em>real bookings.</em></h2>
-    <p class="section-sub">Reviews shared by travelers who booked through our parent operation, The Timeshare Brokers / The Vacation Advantage.</p>
+    <p class="section-sub">Reviews shared by travelers who booked through Resort Rental Direct and our affiliated specialists.</p>
 
     <div class="review-grid">
       <div class="review-card">
@@ -666,17 +717,17 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
         <p class="review-text">I just want to tell you how much I appreciate all of your tremendously capable and patient reassurances and processing of my rental. I award you an A+ for everything and would not hesitate to recommend you to others. You've been a SUPERSTAR in dealing with all of my questions.</p>
-        <p class="review-name"><strong>Barrie S.</strong> · via The Timeshare Brokers</p>
+        <p class="review-name"><strong>Barrie S.</strong> · Resort Rental Direct</p>
       </div>
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
-        <p class="review-text">Kevin Curran of The Vacation Advantage and The Timeshare Brokers was wonderful to work with. He was timely in his responses, provided realistic expectations, and offered great suggestions to make our family trip a success. We look forward to working with Kevin again in the future!</p>
-        <p class="review-name"><strong>Jen Y.</strong> · via The Vacation Advantage</p>
+        <p class="review-text">Kevin Curran of Resort Rental Direct was wonderful to work with. He was timely in his responses, provided realistic expectations, and offered great suggestions to make our family trip a success. We look forward to working with Kevin again in the future!</p>
+        <p class="review-name"><strong>Jen Y.</strong> · Resort Rental Direct</p>
       </div>
       <div class="review-card">
         <div class="review-stars">★★★★★</div>
         <p class="review-text">I would like to thank you and your company for helping us be able to use our points instead of throwing them away. To find someone who is a person that I can trust is hard to find these days because everyone wants to take advantage of you. Thank you again for being honest and kind.</p>
-        <p class="review-name"><strong>Janet Z.</strong> · via The Timeshare Brokers</p>
+        <p class="review-name"><strong>Janet Z.</strong> · Resort Rental Direct</p>
       </div>
     </div>
   </div>
@@ -694,8 +745,8 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
         <div class="faq-a">Timeshare owners often have weeks they can't use in a given year — schedule conflicts, kids' calendars, life. Rather than letting that week go to waste, they rent it. We connect them with travelers who want that resort stay. The owner gets paid for unused inventory, you get a fully furnished resort villa or condo at well below retail, and our specialists handle every detail of the booking and confirmation.</div>
       </details>
       <details class="faq-item">
-        <summary class="faq-q">Is this legitimate? Who is The Timeshare Brokers, LLC?</summary>
-        <div class="faq-a">Resort Rental Direct is the consumer-facing brand of The Timeshare Brokers, LLC — an Orlando-based vacation rental specialist established in 2015. Eleven-plus years of operating history, hundreds of completed bookings across major branded properties. You can verify the parent company at <a href="https://www.thetimesharebrokers.com/">thetimesharebrokers.com</a>.</div>
+        <summary class="faq-q">Is this legitimate? Who is behind Resort Rental Direct?</summary>
+        <div class="faq-a">Resort Rental Direct is an Orlando-based vacation rental specialist established in 2015. Eleven-plus years of operating history, hundreds of completed bookings across major branded properties. Real specialists, real confirmations, real resorts.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">Why are owner-direct prices so much lower than booking the resort directly?</summary>
@@ -711,7 +762,7 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
       </details>
       <details class="faq-item">
         <summary class="faq-q">How do I pay? Is my payment protected?</summary>
-        <div class="faq-a">Payment is processed through The Timeshare Brokers, LLC after your reservation is confirmed in writing. We accept major credit cards. The booking confirmation comes directly from the resort itself, in your name, before final payment is collected.</div>
+        <div class="faq-a">Payment is processed through Resort Rental Direct after your reservation is confirmed in writing. We accept major credit cards. The booking confirmation comes directly from the resort itself, in your name, before final payment is collected.</div>
       </details>
       <details class="faq-item">
         <summary class="faq-q">What happens after I submit a quote request?</summary>
@@ -732,9 +783,10 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
 
     <div class="about-grid">
       <div class="about-text">
-        <p><strong>Resort Rental Direct is the direct-to-consumer brand of The Timeshare Brokers, LLC</strong> — an Orlando-based vacation rental specialist founded in 2015. We've spent the last eleven-plus years matching travelers with luxury resort rentals at owner-direct rates.</p>
+        <img class="about-photo" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80&fit=crop&crop=center" alt="Couple relaxing at luxury resort" loading="lazy" />
+        <p><strong>Resort Rental Direct is an Orlando-based vacation rental specialist founded in 2015.</strong> We've spent the last eleven-plus years matching travelers with luxury resort rentals at owner-direct rates.</p>
 
-        <p>What started as a small boutique broker has grown into a network spanning 80-plus branded resort properties — Marriott, Hilton, Wyndham, Hyatt, Disney, Westin, and others — across the U.S., the Caribbean, Mexico, and select international markets. We work alongside our affiliated booking arm, The Vacation Advantage, to source inventory and serve travelers.</p>
+        <p>What started as a small boutique operation has grown into a network spanning 80-plus branded resort properties — Marriott, Hilton, Wyndham, Hyatt, Disney, Westin, and others — across the U.S., the Caribbean, Mexico, and select international markets.</p>
 
         <p>What we don't do: replace human service with algorithms. Every quote you receive is pulled and reviewed by a specialist. Every reservation is confirmed in writing before you pay. Every question gets a same-day answer on weekdays. That's how vacation booking should work.</p>
 
@@ -744,7 +796,7 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
       <div class="about-card">
         <h3>The basics</h3>
         <div class="about-stats">
-          <div class="about-stat"><div class="as-num">2015</div><div class="as-lbl">The Timeshare Brokers, LLC founded</div></div>
+          <div class="about-stat"><div class="as-num">2015</div><div class="as-lbl">Resort Rental Direct founded</div></div>
           <div class="about-stat"><div class="as-num">11+</div><div class="as-lbl">years of operating history</div></div>
           <div class="about-stat"><div class="as-num">80+</div><div class="as-lbl">branded resort properties in network</div></div>
           <div class="about-stat"><div class="as-num">100s</div><div class="as-lbl">of completed bookings</div></div>
@@ -839,7 +891,7 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
   <div class="footer-inner">
     <div>
       <div class="footer-brand">Resort Rental <span>Direct</span></div>
-      <p class="footer-text">A service of The Timeshare Brokers, LLC. Owner-direct timeshare rentals at top-tier branded resorts. Established 2015 · Orlando, Florida.</p>
+      <p class="footer-text">Owner-direct resort rentals. Established 2015 · Orlando, Florida.</p>
     </div>
     <div class="footer-col">
       <h4>Site</h4>
@@ -858,7 +910,7 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
     </div>
   </div>
   <div class="footer-bot">
-    <div>© 2026 The Timeshare Brokers, LLC · Resort Rental Direct is a service mark of The Timeshare Brokers, LLC.</div>
+    <div>© 2026 Resort Rental Direct · All rights reserved.</div>
     <div>All resort and brand names are trademarks of their respective owners.</div>
   </div>
 </footer>
