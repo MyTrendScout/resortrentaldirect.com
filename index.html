@@ -318,6 +318,19 @@ section { padding: 100px 52px; }
   line-height: 1.7;
 }
 .dest-extra strong { color: var(--navy); }
+.all-props { margin-top: 24px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+.all-props-toggle {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px 24px; cursor: pointer; font-size: 14px; font-weight: 500;
+  color: var(--navy); background: var(--cream); list-style: none;
+  transition: background .2s;
+}
+.all-props-toggle::-webkit-details-marker { display: none; }
+.all-props-toggle:hover { background: var(--gold-pale); }
+.all-props-grid { padding: 24px; display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; background: var(--white); }
+.prop-group { font-size: 13px; color: var(--ink-mid); line-height: 1.7; }
+.prop-brand { font-size: 11px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; }
+@media (max-width: 700px) { .all-props-grid { grid-template-columns: 1fr; } }
 
 /* REVIEWS */
 #reviews { background: var(--cream); }
@@ -699,6 +712,21 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
     </div>
 
     <div class="dest-extra"><strong>Don't see your destination?</strong> Our network covers properties across the U.S., the Caribbean, Mexico, and select international markets. Tell us where you want to go and we'll see what's available.</div>
+
+    <details class="all-props">
+      <summary class="all-props-toggle">View all 160+ properties in our network ↓</summary>
+      <div class="all-props-grid">
+        <div class="prop-group"><div class="prop-brand">Diamond / Disney</div>Diamond Resorts Ka'anapali Beach Club · Diamond Resorts Point at Poipu · Disney's Boardwalk Villas</div>
+        <div class="prop-group"><div class="prop-brand">Divi</div>Divi Aruba Beach Resort · Divi Little Bay Beach Resort</div>
+        <div class="prop-group"><div class="prop-brand">Hilton Grand Vacations</div>Hilton Club The District Washington D.C. · Hilton Grand Vacations at Kings Land · Hilton Grand Vacations Club at Sea World · Hilton Hawaiian Village Honolulu · Hilton MarBrisa Carlsbad CA · Hilton Sunrise Lodge Park City UT · Hilton Valdoro Mountain Lodge Breckenridge CO · Ocean Enclave by HGV Myrtle Beach · The District by Hilton Club · The Residences by Hilton Club NY</div>
+        <div class="prop-group"><div class="prop-brand">Hyatt</div>Hyatt Ka'anapali Residence Club Maui · Hyatt Regency Orange County CA · Hyatt Residence Club Carmel Highlands Inn</div>
+        <div class="prop-group"><div class="prop-brand">Marriott Vacation Club</div>Marriott Aruba Ocean Club · Marriott Aruba Surf Club · Marriott Barony Beach Club Hilton Head · Marriott BeachPlace Towers Ft. Lauderdale · Marriott Canyon Villas Phoenix · Marriott Crystal Shores Marco Island · Marriott Cypress Harbour Orlando · Marriott Fairway Villas Galloway NJ · Marriott Frenchman's Cove St. Thomas · Marriott Grand Chateau Las Vegas · Marriott Grand Residence Club Lake Tahoe · Marriott Grande Ocean Hilton Head · Marriott Grande Vista Orlando · Marriott Harbour Point Hilton Head · Marriott Heritage Club Hilton Head · Marriott Kauai Beach Club · Marriott Kauai Lagoons · Marriott Ko Olina Beach Club Oahu · Marriott Lakeshore Reserve Orlando · Marriott Legends Edge Panama City · Marriott Manor Club Williamsburg · Marriott Marbella Beach Spain · Marriott Maui Ocean Club · Marriott Monarch at Sea Pines · Marriott Mountain Valley Lodge Breckenridge · Marriott Mountainside Resort Park City · Marriott Newport Coast Villas CA · Marriott Ocean Pointe Palm Beach Shores · Marriott Oceana Palms Riviera Beach · Marriott Oceanwatch Villas Myrtle Beach · Marriott Phuket Beach Club Thailand · Marriott Royal Palms Orlando · Marriott Sabal Palms Orlando · Marriott Shadow Ridge Palm Desert · Marriott Streamside at Vail · Marriott Summit Watch Park City · Marriott Surfwatch Hilton Head · Marriott Timber Lodge Breckenridge · Marriott Vacation Club Pulse Boston · Marriott Vacation Club Pulse San Diego · Marriott Vacation Club Pulse San Francisco · Marriott Vacation Club Pulse Washington DC · Marriott Village d'ile-de-France Paris · Marriott Waiohai Beach Club Kauai · Marriott Willow Ridge Branson MO</div>
+        <div class="prop-group"><div class="prop-brand">Ritz-Carlton / Westin / Sheraton</div>Ritz Carlton Club San Francisco · Ritz-Carlton Club Vail · Sheraton Broadway Plantation · Sheraton Desert Oasis Villas · Sheraton Kauai Resort · Sheraton Vistana Resort FL · Westin Desert Willow Palm Desert · Westin Ka'anapali Ocean Resort Maui · Westin Kierland Scottsdale · Westin Mission Hills Villas · Westin Nanea Ocean Villas Maui</div>
+        <div class="prop-group"><div class="prop-brand">Wyndham</div>Wyndham Anaheim · Wyndham at the Cottages Myrtle Beach · Wyndham Austin TX · Wyndham Avenue Plaza New Orleans · Wyndham Bali Hai Villas Hawaii · Wyndham Bentley Brook MA · Wyndham Bonnet Creek Orlando · Wyndham Branson at The Meadows · Wyndham Dolphin's Cove CA · Wyndham Durango CO · Wyndham Dye Villas Myrtle Beach · Wyndham Fairfield Bay AR · Wyndham Fairfield Glade TN · Wyndham Glacier Canyon WI · Wyndham Harbour Lights San Diego · Wyndham Ka Eo Kai · Wyndham Kingsgate Williamsburg · Wyndham La Belle Maison New Orleans · Wyndham Nashville · Wyndham National Harbor DC · Wyndham Ocean Boulevard Myrtle Beach · Wyndham Ocean Ridge SC · Wyndham Ocean Walk Daytona Beach · Wyndham Oceanside Pier CA · Wyndham Old Town Alexandria · Wyndham Pagosa CO · Wyndham Palm-Aire Pompano Beach · Wyndham Panama City Beach · Wyndham Park City UT · Wyndham Patriots Place Williamsburg · Wyndham Resort at Avon CO · Wyndham Royal Vista Pompano Beach · Wyndham Santa Barbara Pompano Beach · Wyndham Sapphire Valley NC · Wyndham Sea Gardens Pompano Beach · Wyndham Sea Watch Plantation Myrtle Beach · Wyndham Seaglass Tower Myrtle Beach · Wyndham Sedona AZ · Wyndham Smoky Mountains TN · Wyndham St. Thomas USVI · Wyndham Star Island Kissimmee · Wyndham Steamboat Springs CO · Wyndham Towers on the Grove Myrtle Beach · Wyndham Waikiki Beach Walk Honolulu · Wyndham Westwinds Myrtle Beach</div>
+        <div class="prop-group"><div class="prop-brand">WorldMark</div>WorldMark Anaheim CA · WorldMark Dolphin's Cove CA · WorldMark Kihei HI · WorldMark SD Mission Valley CA</div>
+        <div class="prop-group"><div class="prop-brand">Independent &amp; Other</div>Accra Beach Hotel and Spa Barbados · Aqua Palms Waikiki · Aston Waikiki Beach Tower · Capistrano SurfSide Inn · Carlsbad Seapointe Resort · Christie Lodge Beaver Creek · Daytona SeaBreeze Resort · Grand Pacific Palisades · Harborside Resort at Atlantis · Havasu Dunes Resort · Island Seas Resort Freeport · Kahana Falls Resort Lahaina · Kauai Beach Villas · Lawai Beach Resort Kauai · Maui Banyon Resort · Morritt's Tortuga Club Cayman Islands · Olympic Village Inn Lake Tahoe · Orange Lake Resort Kissimmee · Orange Tree Resort Scottsdale · Paradise Beach Villas · Paradise Village Beach Resort · Park Plaza Resort Park City · Peacock Suites · Playa Grande Park Hotel Costa Rica · Red Wolf Lakeside Lodge · Red Wolf Lodge Squaw Valley · Ridge on Sedona Golf Resort · RiverPointe Napa Valley · San Luis Bay Inn · Scottsdale Links Resort · Scottsdale Villa Mirage · Southern California Beach Club · Star Island Resort and Club FL · Sunset Cove Resort Marco Island · Tahoe Beach and Ski Club · The Carlsbad Inn · The Manhattan Club · The Plaza Resort and Spa · The Point at Poipu · The Pono Kai Resort · The Royal Kuhio · The Royal Sands Mexico · Vidanta Grand Mayan Los Cabos · Vidanta Grand Mayan Nuevo Vallarta · Vista Mirage Resort · Waikiki Shore Hawaii · Westgate Myrtle Beach · Westgate Park City UT</div>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -834,7 +862,181 @@ footer { background: var(--navy-deep); padding: 56px 52px 30px; }
           </div>
           <div class="f-field full">
             <label>Destination or preferred resort</label>
-            <input type="text" name="destination" placeholder="e.g. Marriott Maui, Disney World, Hawaii, Aruba…" />
+            <input type="text" name="destination" placeholder="e.g. Marriott Maui, Disney World, Hawaii, Aruba…" list="resort-list" autocomplete="off" />
+            <datalist id="resort-list">
+              <option value="Accra Beach Hotel And Spa, Barbados"/>
+              <option value="Aqua Palms Waikiki Resort, HI"/>
+              <option value="Aston Waikiki Beach Tower"/>
+              <option value="Capistrano SurfSide Inn"/>
+              <option value="Carlsbad Seapointe Resort"/>
+              <option value="Christie Lodge, Beaver Creek"/>
+              <option value="Daytona SeaBreeze Resort, Daytona Beach, FL"/>
+              <option value="Diamond Resorts, Ka'anapali Beach Club"/>
+              <option value="Diamond Resorts, Point at Poipu"/>
+              <option value="Disney's Boardwalk Villas"/>
+              <option value="Divi Aruba Beach Resort"/>
+              <option value="Divi Little Bay Beach Resort"/>
+              <option value="Grand Pacific Palisades"/>
+              <option value="Harborside Resort at Atlantis"/>
+              <option value="Havasu Dunes Resort"/>
+              <option value="Hilton Club The District Washington D.C."/>
+              <option value="Hilton Grand Vacations at Kings Land"/>
+              <option value="Hilton Grand Vacations Club at Sea World"/>
+              <option value="Hilton Hawaiian Village, Honolulu, HI"/>
+              <option value="Hilton MarBrisa, Carlsbad, CA"/>
+              <option value="Hilton Sunrise Lodge, Park City, UT"/>
+              <option value="Hilton Valdoro Mountain Lodge, Breckenridge, CO"/>
+              <option value="Hyatt Ka'anapali Residence Club, Maui, HI"/>
+              <option value="Hyatt Regency Orange County, CA"/>
+              <option value="Hyatt Residence Club Carmel, Highlands Inn"/>
+              <option value="Island Seas Resort Freeport"/>
+              <option value="Kahana Falls Resort, Lahaina, HI"/>
+              <option value="Kauai Beach Villas, HI"/>
+              <option value="Lawai Beach Resort, Kauai, HI"/>
+              <option value="Marriott Aruba Ocean Club, Palm Bch. Aruba"/>
+              <option value="Marriott Aruba Surf Club, Palm Bch. Aruba"/>
+              <option value="Marriott Barony Beach Club, Hilton Head, SC"/>
+              <option value="Marriott BeachPlace Towers, Ft. Lauderdale"/>
+              <option value="Marriott Canyon Villas, Phoenix, AZ"/>
+              <option value="Marriott Crystal Shores, Marco Island, FL"/>
+              <option value="Marriott Cypress Harbour, Orlando, FL"/>
+              <option value="Marriott Fairway Villas, Galloway, NJ"/>
+              <option value="Marriott Frenchman's Cove, St. Thomas, USVI"/>
+              <option value="Marriott Grand Chateau, Las Vegas, NV"/>
+              <option value="Marriott Grand Residence Club, Lake Tahoe, CA"/>
+              <option value="Marriott Grande Ocean, Hilton Head, SC"/>
+              <option value="Marriott Grande Vista, Orlando, FL"/>
+              <option value="Marriott Harbour Point, Hilton Head, SC"/>
+              <option value="Marriott Heritage Club, Hilton Head, SC"/>
+              <option value="Marriott Kauai Beach Club, HI"/>
+              <option value="Marriott Kauai Lagoons"/>
+              <option value="Marriott Ko Olina Beach Club, Oahu, HI"/>
+              <option value="Marriott Lakeshore Reserve, Orlando, FL"/>
+              <option value="Marriott Legends Edge, Panama City, FL"/>
+              <option value="Marriott Manor Club, Williamsburg, VA"/>
+              <option value="Marriott Marbella Beach, Spain"/>
+              <option value="Marriott Maui Ocean Club, HI"/>
+              <option value="Marriott Monarch at Sea Pines, Hilton Head, SC"/>
+              <option value="Marriott Mountain Valley Lodge, Breckenridge, CO"/>
+              <option value="Marriott Mountainside Resort, Park City, UT"/>
+              <option value="Marriott Newport Coast Villas, CA"/>
+              <option value="Marriott Ocean Pointe, Palm Bch. Shores, FL"/>
+              <option value="Marriott Oceana Palms, Riviera Bch., FL"/>
+              <option value="Marriott Oceanwatch Villas, Myrtle Bch., SC"/>
+              <option value="Marriott Phuket Beach Club, Thailand"/>
+              <option value="Marriott Royal Palms, Orlando, FL"/>
+              <option value="Marriott Sabal Palms, Orlando, FL"/>
+              <option value="Marriott Shadow Ridge, Palm Desert, CA"/>
+              <option value="Marriott Streamside at Vail, CO"/>
+              <option value="Marriott Summit Watch, Park City, CO"/>
+              <option value="Marriott Surfwatch, Hilton Head, SC"/>
+              <option value="Marriott Timber Lodge, Breckenridge, CO"/>
+              <option value="Marriott Vacation Club Pulse at Custom House, Boston"/>
+              <option value="Marriott Vacation Club Pulse at San Diego, CA"/>
+              <option value="Marriott Vacation Club Pulse at San Francisco, CA"/>
+              <option value="Marriott Vacation Club Pulse at The Mayflower, DC"/>
+              <option value="Marriott Village d'ile-de-France, Paris"/>
+              <option value="Marriott Waiohai Beach Club, Kauai, HI"/>
+              <option value="Marriott's Willow Ridge, Branson, MO"/>
+              <option value="Maui Banyon Resort, HI"/>
+              <option value="Morritt's Tortuga Club, Cayman Islands"/>
+              <option value="Ocean Enclave by HGV, Myrtle Beach, SC"/>
+              <option value="Olympic Village Inn, Lake Tahoe"/>
+              <option value="Orange Lake Resort, Kissimmee"/>
+              <option value="Orange Tree Resort, Scottsdale, AZ"/>
+              <option value="Paradise Beach Villas"/>
+              <option value="Paradise Village Beach Resort"/>
+              <option value="Park Plaza Resort, Park City, UT"/>
+              <option value="Peacock Suites"/>
+              <option value="Playa Grande Park Hotel, Costa Rica"/>
+              <option value="Red Wolf Lakeside Lodge"/>
+              <option value="Red Wolf Lodge Squaw Valley"/>
+              <option value="Ridge on Sedona Golf Resort"/>
+              <option value="Ritz Carlton Club, San Francisco, CA"/>
+              <option value="Ritz-Carlton Club Vail, CO"/>
+              <option value="RiverPointe Napa Valley"/>
+              <option value="San Luis Bay Inn"/>
+              <option value="Scottsdale Links Resort"/>
+              <option value="Scottsdale Villa Mirage"/>
+              <option value="Sheraton Broadway Plantation Resort Villas"/>
+              <option value="Sheraton Desert Oasis Villas"/>
+              <option value="Sheraton Kauai Resort"/>
+              <option value="Sheraton Vistana Resort, FL"/>
+              <option value="Southern California Beach Club, CA"/>
+              <option value="Star Island Resort and Club, FL"/>
+              <option value="Sunset Cove Resort, Marco Island, FL"/>
+              <option value="Tahoe Beach and Ski Club"/>
+              <option value="The Carlsbad Inn"/>
+              <option value="The District by Hilton Club"/>
+              <option value="The Manhattan Club"/>
+              <option value="The Plaza Resort and Spa"/>
+              <option value="The Point at Poipu"/>
+              <option value="The Pono Kai Resort"/>
+              <option value="The Residences by Hilton Club, NY"/>
+              <option value="The Royal Kuhio"/>
+              <option value="The Royal Sands, Mexico"/>
+              <option value="Vidanta Grand Mayan Los Cabos, Mexico"/>
+              <option value="Vidanta Grand Mayan Nuevo Vallarta, Mexico"/>
+              <option value="Vista Mirage Resort"/>
+              <option value="Waikiki Shore, Hawaii"/>
+              <option value="Westgate Myrtle Beach Resort"/>
+              <option value="Westgate Park City, UT"/>
+              <option value="Westin Desert Willow, Palm Desert, CA"/>
+              <option value="Westin Ka'anapali Ocean Resort, Maui, HI"/>
+              <option value="Westin Kierland Resort & Spa, Scottsdale, AZ"/>
+              <option value="Westin Mission Hills Villas, Rancho Mirage, CA"/>
+              <option value="Westin Nanea Ocean Villas, Maui, HI"/>
+              <option value="WorldMark Anaheim, CA"/>
+              <option value="WorldMark Dolphin's Cove, CA"/>
+              <option value="Worldmark Kihei, HI"/>
+              <option value="WorldMark SD Mission Valley, CA"/>
+              <option value="Wyndham Anaheim, CA"/>
+              <option value="Wyndham at the Cottages, Myrtle Beach, SC"/>
+              <option value="Wyndham Austin, TX"/>
+              <option value="Wyndham Avenue Plaza, New Orleans, LA"/>
+              <option value="Wyndham Bali Hai Villas, Hawaii"/>
+              <option value="Wyndham Bentley Brook, MA"/>
+              <option value="Wyndham Bonnet Creek Resort, Orlando, FL"/>
+              <option value="Wyndham Branson at The Meadows, MO"/>
+              <option value="Wyndham Dolphin's Cove Resort, CA"/>
+              <option value="Wyndham Durango, CO"/>
+              <option value="Wyndham Dye Villas, Myrtle Beach, SC"/>
+              <option value="Wyndham Fairfield Bay, AR"/>
+              <option value="Wyndham Fairfield Glade, Crossville, TN"/>
+              <option value="Wyndham Glacier Canyon, WI"/>
+              <option value="Wyndham Governor's Green, VI"/>
+              <option value="Wyndham Harbour Lights, San Diego"/>
+              <option value="Wyndham Ka Eo Kai"/>
+              <option value="Wyndham Kingsgate, Williamsburg, VA"/>
+              <option value="Wyndham La Belle Maison, New Orleans"/>
+              <option value="Wyndham Nashville Resort, TN"/>
+              <option value="Wyndham National Harbor, DC"/>
+              <option value="Wyndham Ocean Boulevard, Myrtle Bch, SC"/>
+              <option value="Wyndham Ocean Ridge, South Carolina"/>
+              <option value="Wyndham Ocean Walk, Daytona Beach, FL"/>
+              <option value="Wyndham Oceanside Pier Resort, CA"/>
+              <option value="Wyndham Old Town Alexandria, VA"/>
+              <option value="Wyndham Pagosa, CO"/>
+              <option value="Wyndham Palm-Aire, Pompano Bch, FL"/>
+              <option value="Wyndham Panama City Beach, FL"/>
+              <option value="Wyndham Park City Resort, UT"/>
+              <option value="Wyndham Patriots Place, Williamsburg, VA"/>
+              <option value="Wyndham Resort at Avon, CO"/>
+              <option value="Wyndham Royal Vista, Pompano Bch, FL"/>
+              <option value="Wyndham Santa Barbara, Pompano Bch, FL"/>
+              <option value="Wyndham Sapphire Valley, NC"/>
+              <option value="Wyndham Sea Gardens, Pompano Bch, FL"/>
+              <option value="Wyndham Sea Watch Plantation, Myrtle Bch, SC"/>
+              <option value="Wyndham Seaglass Tower, Myrtle Bch, SC"/>
+              <option value="Wyndham Sedona, AZ"/>
+              <option value="Wyndham Smoky Mountains, TN"/>
+              <option value="Wyndham St. Thomas, USVI"/>
+              <option value="Wyndham Star Island, Kissimmee, FL"/>
+              <option value="Wyndham Steamboat Springs, CO"/>
+              <option value="Wyndham Towers on the Grove, Myrtle Bch, SC"/>
+              <option value="Wyndham Waikiki Beach Walk, Honolulu, HI"/>
+              <option value="Wyndham Westwinds, Myrtle Beach, SC"/>
+            </datalist>
           </div>
           <div class="f-field">
             <label>Check-in date</label>
