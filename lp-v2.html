@@ -9,6 +9,19 @@
     gtag('js', new Date());
     gtag('config', 'AW-1071278490');
   </script>
+  <!-- Event snippet for Conversion conversion page -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') { window.location = url; }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-1071278490/2ONBCJzasV4QmtPp_gM',
+      'event_callback': callback
+    });
+    return false;
+  }
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resort Rental Direct | Stop Searching, Start Traveling</title>
@@ -903,6 +916,7 @@
       })
     }).then(function(r) {
       if (r.ok) {
+        gtag_report_conversion();
         document.getElementById('quoteForm').style.display = 'none';
         document.getElementById('successMsg').style.display = 'block';
       } else {
