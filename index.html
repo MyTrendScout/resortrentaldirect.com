@@ -1,1173 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1071278490"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-1071278490');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resort Rental Direct – Get Your Luxury Suite for 50–70% Less</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<title>Resort Rental Direct — Owner-Direct Rentals at Marriott, Hilton, Wyndham, Disney, Hyatt</title>
-<meta name="description" content="Owner-direct timeshare rentals at top-tier resorts — Marriott, Hilton, Wyndham, Hyatt, Disney, Westin. Same-day quotes weekdays. Zero booking fees. Est. 2015 · Orlando, Florida." />
-<link rel="canonical" href="https://resortrentaldirect.com/" />
+    :root {
+      --navy:       #0b1e3d;
+      --teal:       #1aa8a4;
+      --teal-dark:  #137d7a;
+      --gold:       #f5c518;
+      --green:      #1e8c3a;
+      --green-dk:   #166b2c;
+      --light:      #f4f7fa;
+      --muted:      #5a6a7a;
+    }
 
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://resortrentaldirect.com/" />
-<meta property="og:title" content="Resort Rental Direct — Owner-Direct Resort Rentals" />
-<meta property="og:description" content="Owner-direct timeshare rentals at top-tier resorts. Same-day quotes weekdays. Zero booking fees. Est. 2015 · Orlando, Florida." />
-<meta property="og:site_name" content="Resort Rental Direct" />
+    body { font-family: 'Open Sans', sans-serif; color: #1a1a2e; background: #fff; }
+    h1,h2,h3,h4 { font-family: 'Montserrat', sans-serif; }
 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Resort Rental Direct — Owner-Direct Resort Rentals" />
-<meta name="twitter:description" content="Same-day quotes weekdays. Owner-direct rentals at Marriott, Hilton, Wyndham, Hyatt, Disney." />
+    /* ───── NAV ───── */
+    nav {
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 36px;
+      position: sticky; top: 0; z-index: 200;
+    }
+    .logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+    .logo-box {
+      width: 34px; height: 34px; border-radius: 6px;
+      background: var(--teal);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff; font-size: 17px;
+    }
+    .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; color: #fff; }
+    .logo-text span { color: var(--teal); }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a { color: rgba(255,255,255,.78); font-size: 13.5px; font-weight: 600; text-decoration: none; }
+    .nav-links a:hover { color: #fff; }
+    .nav-btn {
+      background: var(--green); color: #fff;
+      font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px;
+      padding: 9px 18px; border-radius: 5px; text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-btn:hover { background: var(--green-dk); }
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    /* ───── HERO ───── */
+    .hero {
+      position: relative;
+      min-height: 580px;
+      display: flex;
+      align-items: stretch;
+    }
+    /* full-bleed photo */
+    .hero-photo {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to right, rgba(8,22,45,.82) 42%, rgba(8,22,45,.35) 100%),
+        url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&q=85') center/cover no-repeat;
+    }
+    .hero-inner {
+      position: relative; z-index: 1;
+      width: 100%; max-width: 1180px; margin: 0 auto;
+      padding: 64px 36px;
+      display: flex; align-items: center; gap: 52px;
+    }
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  "@id": "https://resortrentaldirect.com/#org",
-  "name": "Resort Rental Direct",
-  "alternateName": "Resort Rental Direct, a service of The Timeshare Brokers, LLC",
-  "description": "Owner-direct timeshare rentals at top-tier branded resorts including Marriott, Hilton, Wyndham, Hyatt, Disney, and Westin. Same-day quotes weekdays.",
-  "url": "https://resortrentaldirect.com/",
-  "telephone": "+1-239-823-7286",
-  "email": "sales@resortrentaldirect.com",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "824 Lake Baldwin Ln",
-    "addressLocality": "Orlando",
-    "addressRegion": "FL",
-    "postalCode": "32803",
-    "addressCountry": "US"
-  },
-  "parentOrganization": {
-    "@type": "Organization",
-    "name": "The Timeshare Brokers, LLC",
-    "foundingDate": "2015",
-    "url": "https://www.thetimesharebrokers.com/"
-  },
-  "areaServed": [
-    {"@type": "Country", "name": "United States"},
-    {"@type": "Place", "name": "Caribbean"},
-    {"@type": "Country", "name": "Mexico"}
-  ],
-  "knowsAbout": [
-    "Timeshare rentals",
-    "Owner-direct vacation rentals",
-    "Marriott Vacation Club rentals",
-    "Hilton Grand Vacations rentals",
-    "Wyndham timeshare rentals",
-    "Disney Vacation Club rentals",
-    "Hyatt Residence Club rentals",
-    "Westin timeshare rentals"
-  ]
-}
-</script>
+    /* left copy */
+    .hero-copy { flex: 1; color: #fff; }
+    .hero-eyebrow {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px; font-weight: 800;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+    .hero-copy h1 {
+      font-size: clamp(26px, 3.8vw, 46px);
+      font-weight: 900; text-transform: uppercase; line-height: 1.07;
+      margin-bottom: 14px;
+    }
+    .hero-copy h1 .blue { color: var(--teal); }
+    .hero-copy p {
+      font-size: 15px; color: rgba(255,255,255,.84); line-height: 1.7;
+      max-width: 430px; margin-bottom: 26px;
+    }
+    .brand-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .brand-pill {
+      background: rgba(255,255,255,.13);
+      border: 1px solid rgba(255,255,255,.2);
+      color: rgba(255,255,255,.8);
+      font-size: 11px; font-weight: 700;
+      padding: 5px 13px; border-radius: 4px;
+      text-transform: uppercase; letter-spacing: .8px;
+    }
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How does owner-direct timeshare rental work?", "acceptedAnswer": {"@type": "Answer", "text": "Timeshare owners often have weeks they can't use. We connect them with travelers who want luxury resort stays at a fraction of retail. The owner gets paid for unused inventory, you get a fully furnished resort villa or condo, and our specialists handle every detail of the booking and confirmation."}},
-    {"@type": "Question", "name": "Is this legitimate? Who is The Timeshare Brokers, LLC?", "acceptedAnswer": {"@type": "Answer", "text": "Resort Rental Direct is a service of The Timeshare Brokers, LLC — an Orlando-based vacation rental specialist established in 2015. Eleven-plus years of operating history, hundreds of completed bookings across major branded properties."}},
-    {"@type": "Question", "name": "Why are owner-direct prices so much lower than booking direct?", "acceptedAnswer": {"@type": "Answer", "text": "You're booking an unused timeshare week from the original owner — not from the resort's nightly inventory. Owners price below what the resort would charge transient guests because their goal is to recover their annual maintenance fees, not turn a profit. Savings typically run 30 to 60 percent off direct booking."}},
-    {"@type": "Question", "name": "Will I get the same resort amenities as a regular guest?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You check in like any other guest and have full access to pools, restaurants, concierge, valet, and on-property amenities. The accommodations themselves are typically larger than hotel rooms — full kitchens, separate bedrooms, washer/dryer in many units."}},
-    {"@type": "Question", "name": "What if my dates change or the booking falls through?", "acceptedAnswer": {"@type": "Answer", "text": "Confirmed bookings are guaranteed. We work directly with verified owner inventory and confirm reservations in writing before you pay. If a rare issue arises, our specialists handle the resolution — that's why we operate on a personal-service model rather than as a faceless platform."}},
-    {"@type": "Question", "name": "How do I pay? Is my payment protected?", "acceptedAnswer": {"@type": "Answer", "text": "Payment is processed through The Timeshare Brokers, LLC after your reservation is confirmed in writing. We accept major credit cards. Booking confirmation comes from the resort itself in your name."}},
-    {"@type": "Question", "name": "What happens after I submit a quote request?", "acceptedAnswer": {"@type": "Answer", "text": "On weekdays, expect a response from a real specialist within four hours — often the same day. We pull matching inventory, send you 2-3 options with full resort details and pricing, and answer any questions before you commit."}},
-    {"@type": "Question", "name": "Which resort brands and locations do you cover?", "acceptedAnswer": {"@type": "Answer", "text": "Marriott Vacation Club, Hilton Grand Vacations, Wyndham, Hyatt Residence Club, Disney Vacation Club, Westin, Bluegreen, Diamond, Westgate, and others. Top destinations include Orlando, Hawaii, Aruba, the Caribbean, Las Vegas, ski markets like Tahoe and Vail, plus international properties."}}
-  ]
-}
-</script>
+    /* ───── FORM CARD ───── */
+    .form-card {
+      width: 370px; flex-shrink: 0;
+      background: #fff; border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(0,0,0,.45);
+    }
+    .fc-head {
+      background: var(--green);
+      padding: 16px 22px 14px; text-align: center;
+    }
+    .fc-head .qs {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px; font-weight: 700; letter-spacing: 2.5px;
+      color: rgba(255,255,255,.8); text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .fc-head h2 {
+      font-size: 16px; font-weight: 900; color: #fff;
+      text-transform: uppercase; line-height: 1.25;
+    }
+    .fc-head h2 small {
+      display: block; font-size: 12px; font-weight: 600;
+      margin-top: 2px; text-transform: none; opacity: .9;
+    }
+    .fc-body { padding: 18px 20px; }
+    .fc-body input,
+    .fc-body select {
+      width: 100%; padding: 11px 13px;
+      border: 1.5px solid #dde3ea; border-radius: 6px;
+      font-size: 13.5px; color: #1a1a2e;
+      margin-bottom: 9px;
+      font-family: 'Open Sans', sans-serif;
+      background: #fff;
+    }
+    .fc-body input:focus,
+    .fc-body select:focus { outline: none; border-color: var(--teal); }
+    .fc-row { display: flex; gap: 8px; }
+    .fc-row input { flex: 1; }
+    .fc-btn {
+      width: 100%; padding: 14px 10px;
+      background: var(--green); color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900; font-size: 14px;
+      text-transform: uppercase; letter-spacing: .3px;
+      border: none; border-radius: 7px; cursor: pointer;
+      line-height: 1.3; margin-top: 2px;
+      transition: background .18s;
+    }
+    .fc-btn:hover { background: var(--green-dk); }
+    .fc-trust {
+      font-size: 10.5px; color: var(--muted);
+      text-align: center; margin-top: 9px;
+    }
 
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --navy-deep:   #0a1f33;
-  --navy:        #0e2c47;
-  --navy-mid:    #1a3a5a;
-  --gold:        #b08c3e;
-  --gold-light:  #d4af6f;
-  --gold-pale:   #f4ecd8;
-  --cream:       #faf6ed;
-  --bg:          #f7f3e9;
-  --white:       #ffffff;
-  --ink:         #1a1a18;
-  --ink-mid:     #555048;
-  --ink-muted:   #8a857c;
-  --border:      rgba(20,14,4,0.09);
-  --border-light:rgba(20,14,4,0.05);
-  --radius:      8px;
-  --radius-lg:   14px;
-}
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    /* ───── TRUST BAR ───── */
+    .trust-bar {
+      background: var(--navy);
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 0; border-top: 1px solid rgba(255,255,255,.07);
+    }
+    .tb-item {
+      color: rgba(255,255,255,.78); font-size: 12.5px; font-weight: 600;
+      padding: 13px 28px;
+      display: flex; align-items: center; gap: 7px;
+      border-right: 1px solid rgba(255,255,255,.1);
+    }
+    .tb-item:last-child { border-right: none; }
+    .tb-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
 
-/* NAV */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  background: rgba(10,31,51,0.92); backdrop-filter: blur(16px);
-  padding: 0 52px; height: 70px;
-  display: flex; align-items: center; justify-content: space-between;
-  border-bottom: 1px solid rgba(212,175,111,0.18);
-}
-.nav-logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
-.logo-text {
-  font-family: 'Cormorant Garamond', serif; font-weight: 500;
-  font-size: 22px; color: #fff; white-space: nowrap; letter-spacing: -0.3px;
-}
-.logo-text span { color: var(--gold-light); font-style: italic; }
-.nav-links { display: flex; gap: 32px; list-style: none; }
-.nav-links a { font-size: 13px; color: rgba(255,255,255,0.7); text-decoration: none; transition: color .2s; letter-spacing: .2px; }
-.nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
-.nav-cta {
-  background: var(--gold); color: var(--navy-deep); border: none;
-  border-radius: var(--radius); padding: 10px 22px;
-  font-size: 13px; font-weight: 500; font-family: 'Inter', sans-serif;
-  cursor: pointer; text-decoration: none;
-  transition: background .2s, transform .15s;
-  letter-spacing: .3px;
-}
-.nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+    /* ───── WHY BROKER ───── */
+    .why-section { background: #fff; }
+    .inner { max-width: 1180px; margin: 0 auto; padding: 68px 36px; }
+    .sec-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--teal);
+      margin-bottom: 8px;
+    }
+    .sec-title {
+      font-size: clamp(22px, 2.8vw, 34px); font-weight: 900;
+      text-transform: uppercase; line-height: 1.12; margin-bottom: 12px;
+    }
+    .sec-title .acc { color: var(--teal); }
+    .sec-sub { font-size: 15px; color: var(--muted); line-height: 1.7; max-width: 580px; margin-bottom: 44px; }
 
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, rgba(10,31,51,0.55) 0%, rgba(14,44,71,0.48) 60%, rgba(6,24,42,0.60) 100%),
-              var(--hero-bg, url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=80&fit=crop&crop=center')) center/cover no-repeat;
-  padding: 140px 52px 100px;
-  position: relative;
-  overflow: hidden;
-}
-.hero::before {
-  content: '';
-  position: absolute; top: -300px; right: -200px;
-  width: 900px; height: 900px;
-  background: radial-gradient(circle, rgba(212,175,111,0.12) 0%, transparent 65%);
-  pointer-events: none;
-}
-.hero::after {
-  content: '';
-  position: absolute; bottom: -300px; left: -200px;
-  width: 800px; height: 800px;
-  background: radial-gradient(circle, rgba(176,140,62,0.08) 0%, transparent 60%);
-  pointer-events: none;
-}
-.hero-inner {
-  max-width: 1200px; margin: 0 auto;
-  position: relative; z-index: 1;
-  display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px;
-  align-items: center;
-}
-.hero-eyebrow {
-  display: inline-flex; align-items: center; gap: 8px;
-  font-size: 10px; font-weight: 500; color: var(--gold-light); text-transform: uppercase; letter-spacing: 2.4px;
-  margin-bottom: 28px;
-  padding: 7px 16px;
-  background: rgba(212,175,111,0.08);
-  border: 1px solid rgba(212,175,111,0.25);
-  border-radius: 100px;
-}
-.hero h1 {
-  font-family: 'Cormorant Garamond', serif; font-weight: 400;
-  font-size: clamp(40px, 5.5vw, 64px);
-  color: #fff; line-height: 1.05; letter-spacing: -1px;
-  margin-bottom: 24px;
-}
-.hero h1 em { font-style: italic; color: var(--gold-light); font-weight: 400; }
-.hero-sub { font-size: 17px; color: rgba(255,255,255,0.72); line-height: 1.65; margin-bottom: 34px; max-width: 540px; font-weight: 300; }
-.hero-promises { display: grid; gap: 12px; margin-bottom: 38px; }
-.hero-promise { display: flex; align-items: center; gap: 12px; font-size: 14px; color: rgba(255,255,255,0.88); }
-.hero-promise svg { width: 17px; height: 17px; stroke: var(--gold-light); fill: none; stroke-width: 2.4; flex-shrink: 0; }
-.hero-cta-row { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
-.btn-primary {
-  background: var(--gold); color: var(--navy-deep); border: none;
-  padding: 16px 32px; border-radius: var(--radius);
-  font-size: 14px; font-weight: 500; font-family: 'Inter', sans-serif; letter-spacing: .4px;
-  cursor: pointer; text-decoration: none;
-  transition: background .2s, transform .15s, box-shadow .2s;
-  box-shadow: 0 6px 24px rgba(176,140,62,0.32);
-}
-.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 8px 28px rgba(212,175,111,0.45); }
-.btn-secondary {
-  background: rgba(255,255,255,0.06); color: #fff;
-  padding: 16px 28px; border-radius: var(--radius);
-  font-size: 14px; font-weight: 500; text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.18);
-  transition: background .2s, border-color .2s; letter-spacing: .3px;
-}
-.btn-secondary:hover { background: rgba(255,255,255,0.1); border-color: var(--gold-light); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border: 1px solid #e4eaf0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .why-cell {
+      padding: 30px 28px;
+      border-right: 1px solid #e4eaf0;
+      border-bottom: 1px solid #e4eaf0;
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    .why-cell:nth-child(2n) { border-right: none; }
+    .why-cell:nth-child(3),
+    .why-cell:nth-child(4) { border-bottom: none; }
+    .why-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: rgba(14,124,123,.1); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+    .why-cell h3 {
+      font-size: 13.5px; font-weight: 700;
+      text-transform: uppercase; color: var(--navy);
+      margin-bottom: 6px; line-height: 1.3;
+    }
+    .why-cell p { font-size: 13px; color: var(--muted); line-height: 1.65; }
 
-/* HERO RIGHT — trust card */
-.trust-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(212,175,111,0.18);
-  border-radius: var(--radius-lg);
-  padding: 32px;
-  backdrop-filter: blur(10px);
-}
-.trust-card h3 {
-  font-family: 'Cormorant Garamond', serif; font-weight: 500;
-  font-size: 22px; color: #fff; margin-bottom: 4px;
-}
-.trust-card .trust-sub { font-size: 12px; color: rgba(255,255,255,0.55); margin-bottom: 26px; letter-spacing: .3px; }
-.trust-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 24px; margin-bottom: 26px; }
-.trust-stat .ts-num {
-  font-family: 'Cormorant Garamond', serif; font-weight: 500;
-  font-size: 36px; color: var(--gold-light); line-height: 1; margin-bottom: 5px;
-}
-.trust-stat .ts-lbl { font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.45; }
-.trust-foot {
-  font-size: 12px; color: rgba(255,255,255,0.5); padding-top: 22px;
-  border-top: 1px solid rgba(212,175,111,0.18); line-height: 1.6;
-}
-.trust-foot a { color: var(--gold-light); text-decoration: none; }
+    /* ───── STEPS ───── */
+    .steps-section { background: var(--navy); }
+    .steps-inner { max-width: 1180px; margin: 0 auto; padding: 68px 36px; }
+    .steps-inner .sec-label { color: var(--gold); }
+    .steps-inner .sec-title { color: #fff; }
+    .steps-inner .sec-sub { color: rgba(255,255,255,.6); }
+    .steps-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .step {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.11);
+      border-radius: 10px; padding: 30px 22px; text-align: center;
+    }
+    .step-num {
+      width: 50px; height: 50px; margin: 0 auto 16px;
+      background: var(--teal); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 21px; color: #fff;
+    }
+    .step h3 { font-size: 14px; font-weight: 700; color: #fff; text-transform: uppercase; margin-bottom: 10px; }
+    .step p { font-size: 13px; color: rgba(255,255,255,.62); line-height: 1.65; }
 
-/* SECTION SCAFFOLD */
-section { padding: 100px 52px; }
-.section-inner { max-width: 1200px; margin: 0 auto; }
-.section-eyebrow {
-  font-size: 10px; font-weight: 500; color: var(--gold);
-  text-transform: uppercase; letter-spacing: 2.4px; margin-bottom: 14px;
-}
-.section-title {
-  font-family: 'Cormorant Garamond', serif; font-weight: 400;
-  font-size: clamp(30px, 3.8vw, 44px); color: var(--navy);
-  margin-bottom: 16px; line-height: 1.15; letter-spacing: -.6px;
-}
-.section-title em { font-style: italic; color: var(--gold); }
-.section-sub { font-size: 17px; color: var(--ink-mid); max-width: 660px; line-height: 1.65; }
+    /* ───── DEALS ───── */
+    .deals-section { background: var(--light); }
+    .deals-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .deal {
+      background: #fff; border-radius: 10px; overflow: hidden;
+      box-shadow: 0 3px 16px rgba(0,0,0,.07);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .deal:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,.12); }
+    .deal-img {
+      height: 170px; position: relative;
+      background: linear-gradient(135deg, #0b1e3d, #1aa8a4);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 52px;
+    }
+    .deal-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .deal-badge {
+      position: absolute; top: 10px; left: 10px;
+      background: var(--green); color: #fff;
+      font-size: 10px; font-weight: 700; padding: 3px 9px;
+      border-radius: 4px; text-transform: uppercase; letter-spacing: .5px;
+    }
+    .deal-body { padding: 16px 18px; }
+    .deal-loc { font-size: 11px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+    .deal-name { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .deal-price { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 900; color: var(--green); }
+    .deal-price span { font-size: 13px; font-weight: 600; color: var(--muted); }
+    .deal-link {
+      display: block; width: 100%; margin-top: 13px; padding: 10px;
+      background: var(--navy); color: #fff;
+      text-align: center; border-radius: 6px;
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      text-decoration: none; letter-spacing: .4px;
+      transition: background .18s;
+    }
+    .deal-link:hover { background: var(--teal); }
 
-/* GOLD ACCENT LINE */
-.accent-line { width: 36px; height: 2px; background: var(--gold); margin-bottom: 24px; }
+    /* ───── TESTIMONIALS ───── */
+    .testi-section { background: #fff; }
+    .testi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .testi {
+      background: var(--light); border-radius: 10px; padding: 26px;
+      position: relative; overflow: hidden;
+    }
+    .testi::before {
+      content: '"'; position: absolute; top: 10px; left: 18px;
+      font-size: 72px; color: var(--teal); opacity: .15;
+      font-family: Georgia, serif; line-height: 1;
+    }
+    .stars { color: #f5c518; font-size: 15px; margin-bottom: 10px; }
+    .testi q { font-size: 14px; color: #444; line-height: 1.7; font-style: italic; quotes: none; display: block; margin-bottom: 14px; }
+    .testi-who { display: flex; align-items: center; gap: 11px; }
+    .testi-av {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--navy); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 15px; flex-shrink: 0;
+    }
+    .testi-name { font-weight: 700; font-size: 13.5px; color: var(--navy); }
+    .testi-sub { font-size: 12px; color: var(--muted); }
 
-/* BRAND STRIP */
-.brand-strip { background: var(--cream); padding: 40px 52px; border-bottom: 1px solid var(--border); }
-.brand-strip-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
-.brand-label {
-  font-size: 11px; font-weight: 500; color: var(--gold);
-  text-transform: uppercase; letter-spacing: 2.2px; flex-shrink: 0;
-}
-.brand-list { display: flex; gap: 40px; flex-wrap: wrap; flex: 1; justify-content: flex-end; }
-.brand-item {
-  font-family: 'Cormorant Garamond', serif; font-weight: 500;
-  font-size: 17px; color: var(--navy); white-space: nowrap; letter-spacing: .3px;
-}
+    /* ───── SPECIALIST ───── */
+    .spec-section { background: var(--light); }
+    .spec-inner {
+      max-width: 1180px; margin: 0 auto; padding: 68px 36px;
+      display: flex; gap: 56px; align-items: center;
+    }
+    .spec-photo {
+      width: 190px; height: 190px; flex-shrink: 0;
+      border-radius: 50%; overflow: hidden;
+      border: 5px solid var(--teal);
+      background: linear-gradient(135deg, var(--navy), var(--teal));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 64px;
+    }
+    .spec-copy .sec-label { margin-bottom: 5px; }
+    .spec-copy h2 { font-size: 26px; font-weight: 900; color: var(--navy); text-transform: uppercase; }
+    .spec-role { font-size: 12.5px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; margin: 4px 0 14px; display: block; }
+    .spec-copy p { font-size: 14.5px; color: var(--muted); line-height: 1.75; margin-bottom: 22px; }
+    .spec-tags { display: flex; gap: 10px; flex-wrap: wrap; }
+    .spec-tag {
+      background: var(--navy); color: #fff;
+      font-size: 12px; font-weight: 700;
+      padding: 7px 14px; border-radius: 5px;
+      text-transform: uppercase; letter-spacing: .4px;
+    }
 
-/* WHY US */
-#why { background: var(--white); }
-.why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 56px; }
-.why-card {
-  padding: 32px 26px; background: var(--cream);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  transition: transform .2s, box-shadow .2s, border-color .2s;
-}
-.why-card:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(20,14,4,0.06); border-color: rgba(176,140,62,0.25); }
-.why-icon {
-  width: 44px; height: 44px;
-  background: var(--gold-pale);
-  border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 20px;
-}
-.why-icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-.why-card h3 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 8px; letter-spacing: -.1px; }
-.why-card p { font-size: 14px; color: var(--ink-mid); line-height: 1.65; }
+    /* ───── BOTTOM CTA ───── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+      text-align: center; padding: 72px 36px;
+    }
+    .cta-band h2 {
+      font-size: clamp(22px, 3.2vw, 38px); font-weight: 900;
+      color: #fff; text-transform: uppercase; margin-bottom: 10px;
+    }
+    .cta-band p { font-size: 16px; color: rgba(255,255,255,.85); margin-bottom: 30px; }
+    .cta-band-btn {
+      display: inline-block;
+      background: #fff; color: var(--teal-dark);
+      font-family: 'Montserrat', sans-serif; font-weight: 900;
+      font-size: 16px; text-transform: uppercase;
+      padding: 17px 44px; border-radius: 7px;
+      text-decoration: none; letter-spacing: .3px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.2);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .cta-band-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,.26); }
 
-/* HOW IT WORKS */
-#how { background: var(--bg); }
-.how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 56px; }
-.how-step {
-  background: var(--white); padding: 34px 26px;
-  border: 1px solid var(--border-light); border-radius: var(--radius-lg);
-  position: relative;
-}
-.how-num {
-  font-family: 'Cormorant Garamond', serif; font-weight: 500;
-  font-size: 38px; color: var(--gold); line-height: 1; margin-bottom: 16px;
-  font-style: italic;
-}
-.how-step h3 { font-size: 16px; font-weight: 600; color: var(--navy); margin-bottom: 8px; }
-.how-step p { font-size: 14px; color: var(--ink-mid); line-height: 1.65; }
+    /* ───── FOOTER ───── */
+    footer {
+      background: var(--navy); color: rgba(255,255,255,.45);
+      text-align: center; padding: 22px 36px; font-size: 12.5px;
+    }
+    footer a { color: var(--teal); text-decoration: none; }
 
-/* DESTINATIONS */
-#destinations { background: var(--white); }
-.dest-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 56px; }
-.dest-card {
-  background: var(--cream);
-  border: 1px solid var(--border-light); border-radius: var(--radius);
-  overflow: hidden;
-  transition: border-color .2s, transform .2s, box-shadow .2s;
-}
-.dest-card:hover { border-color: rgba(176,140,62,0.3); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20,14,4,0.08); }
-.dest-thumb {
-  width: 100%; height: 160px;
-  object-fit: cover; object-position: center;
-  display: block;
-}
-.dest-body { padding: 20px; }
-.dest-card h3 { font-size: 15px; font-weight: 600; color: var(--navy); margin-bottom: 6px; letter-spacing: -.1px; }
-.dest-card p { font-size: 13px; color: var(--ink-mid); line-height: 1.55; }
-.dest-extra {
-  font-size: 14px; color: var(--ink-mid);
-  margin-top: 28px; padding-top: 24px;
-  border-top: 1px solid var(--border);
-  line-height: 1.7;
-}
-.dest-extra strong { color: var(--navy); }
-.all-props { margin-top: 24px; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
-.all-props-toggle {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 18px 24px; cursor: pointer; font-size: 14px; font-weight: 500;
-  color: var(--navy); background: var(--cream); list-style: none;
-  transition: background .2s;
-}
-.all-props-toggle::-webkit-details-marker { display: none; }
-.all-props-toggle:hover { background: var(--gold-pale); }
-.all-props-grid { padding: 24px; display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; background: var(--white); }
-.prop-group { font-size: 13px; color: var(--ink-mid); line-height: 1.7; }
-.prop-brand { font-size: 11px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 6px; }
-@media (max-width: 700px) { .all-props-grid { grid-template-columns: 1fr; } }
-
-/* REVIEWS */
-#reviews { background: var(--cream); }
-.review-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 56px; }
-.review-card {
-  background: var(--white); padding: 34px 30px;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border-light);
-  position: relative;
-}
-.review-card::before {
-  content: '"';
-  position: absolute; top: 14px; left: 24px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 60px; color: var(--gold-pale); line-height: 1;
-  pointer-events: none;
-}
-.review-stars {
-  color: var(--gold); font-size: 14px; letter-spacing: 2px;
-  margin-bottom: 16px; position: relative;
-}
-.review-text {
-  font-family: 'Cormorant Garamond', serif; font-weight: 400;
-  font-size: 18px; color: var(--ink); line-height: 1.6;
-  margin-bottom: 20px; position: relative; font-style: italic;
-}
-.review-name { font-size: 13px; color: var(--ink-muted); position: relative; }
-.review-name strong { color: var(--navy); font-weight: 500; font-style: normal; }
-
-/* FAQ */
-#faq { background: var(--white); }
-.faq-list { max-width: 820px; margin: 56px auto 0; }
-.faq-item { border-top: 1px solid var(--border); }
-.faq-item:last-child { border-bottom: 1px solid var(--border); }
-.faq-q {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 24px 4px; cursor: pointer; font-size: 16px; font-weight: 500;
-  color: var(--navy); list-style: none; transition: color .2s;
-}
-.faq-q::-webkit-details-marker { display: none; }
-.faq-q::after {
-  content: '+'; font-size: 22px; color: var(--gold);
-  transition: transform .2s; line-height: 1; font-weight: 300;
-}
-.faq-q:hover { color: var(--gold); }
-details[open] .faq-q { color: var(--gold); }
-details[open] .faq-q::after { content: '−'; }
-.faq-a { padding: 0 4px 24px; font-size: 15px; color: var(--ink-mid); line-height: 1.75; }
-.faq-a a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-pale); }
-
-/* ABOUT */
-#about { background: var(--bg); }
-.about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: start; margin-top: 56px; }
-.about-photo {
-  width: 100%; height: 220px;
-  object-fit: cover; object-position: center;
-  border-radius: var(--radius-lg);
-  margin-bottom: 28px;
-  display: block;
-}
-.about-text p { font-size: 16px; color: var(--ink-mid); line-height: 1.85; margin-bottom: 18px; }
-.about-text p strong { color: var(--navy); font-weight: 600; }
-.about-card {
-  background: var(--navy);
-  padding: 36px;
-  border-radius: var(--radius-lg);
-  color: #fff; position: relative; overflow: hidden;
-}
-.about-card::before {
-  content: '';
-  position: absolute; top: -100px; right: -100px;
-  width: 300px; height: 300px;
-  background: radial-gradient(circle, rgba(212,175,111,0.12) 0%, transparent 65%);
-  pointer-events: none;
-}
-.about-card h3 {
-  font-family: 'Cormorant Garamond', serif; font-weight: 400;
-  font-size: 24px; margin-bottom: 22px; color: #fff; position: relative;
-}
-.about-stats { display: grid; gap: 18px; position: relative; }
-.about-stat { display: flex; align-items: baseline; gap: 14px; }
-.about-stat .as-num {
-  font-family: 'Cormorant Garamond', serif; font-weight: 500;
-  font-size: 28px; color: var(--gold-light); line-height: 1;
-  flex-shrink: 0; min-width: 64px; font-style: italic;
-}
-.about-stat .as-lbl { font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.45; }
-
-/* QUOTE FORM */
-#quote {
-  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
-  position: relative; overflow: hidden;
-}
-#quote::before {
-  content: '';
-  position: absolute; top: -200px; right: -200px;
-  width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(212,175,111,0.12) 0%, transparent 65%);
-  pointer-events: none;
-}
-.quote-inner { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; text-align: center; }
-.quote-inner .section-eyebrow { color: var(--gold-light); }
-.quote-inner .section-title { color: #fff; }
-.quote-inner .section-sub { color: rgba(255,255,255,0.75); margin: 0 auto; }
-.quote-form-wrap {
-  background: var(--white); border-radius: var(--radius-lg);
-  padding: 44px;
-  margin-top: 52px; text-align: left;
-  box-shadow: 0 24px 60px rgba(10,31,51,0.4);
-}
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px; }
-.f-field { display: flex; flex-direction: column; gap: 6px; }
-.f-field.full { grid-column: 1 / -1; }
-.f-field label { font-size: 12px; font-weight: 500; color: var(--ink-mid); letter-spacing: .3px; }
-.f-field input, .f-field select, .f-field textarea {
-  background: var(--cream); border: 1px solid var(--border); border-radius: 8px;
-  padding: 13px 15px; font-size: 14px; font-family: 'Inter', sans-serif; color: var(--ink);
-  width: 100%; transition: border-color .2s, background .2s;
-}
-.f-field input:focus, .f-field select:focus, .f-field textarea:focus {
-  outline: none; border-color: var(--gold); background: var(--white);
-}
-.f-field textarea { min-height: 90px; resize: vertical; }
-.flex-check { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--ink-mid); margin-bottom: 18px; }
-.submit-btn {
-  background: var(--navy); color: #fff; border: none;
-  padding: 16px 28px; border-radius: 8px;
-  font-size: 14px; font-weight: 500; font-family: 'Inter', sans-serif; letter-spacing: .4px;
-  cursor: pointer; width: 100%; transition: background .2s;
-}
-.submit-btn:hover { background: var(--navy-deep); }
-.submit-btn:disabled { background: var(--ink-muted); cursor: not-allowed; }
-.form-note { font-size: 12px; color: var(--ink-muted); text-align: center; margin-top: 16px; line-height: 1.6; }
-.form-note a { color: var(--gold); text-decoration: none; }
-.thank-you { display: none; text-align: center; padding: 40px 20px; }
-.thank-you h3 {
-  font-family: 'Cormorant Garamond', serif; font-weight: 400;
-  font-size: 30px; color: var(--navy); margin-bottom: 12px;
-}
-.thank-you p { font-size: 15px; color: var(--ink-mid); }
-
-/* CONTACT BAR */
-.contact-bar {
-  background: var(--navy); padding: 24px 52px;
-  display: flex; justify-content: center; align-items: center;
-  gap: 52px; flex-wrap: wrap;
-  border-top: 1px solid rgba(212,175,111,0.18);
-}
-.contact-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.85); font-size: 14px; text-decoration: none; transition: color .2s; }
-.contact-item:hover { color: var(--gold-light); }
-.contact-item svg { width: 17px; height: 17px; stroke: var(--gold-light); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
-
-/* FOOTER */
-footer { background: var(--navy-deep); padding: 56px 52px 30px; }
-.footer-inner {
-  max-width: 1200px; margin: 0 auto;
-  display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px;
-  padding-bottom: 32px; border-bottom: 1px solid rgba(212,175,111,0.12);
-}
-.footer-brand {
-  font-family: 'Cormorant Garamond', serif; font-weight: 500;
-  font-size: 24px; color: #fff; margin-bottom: 12px; letter-spacing: -.3px;
-}
-.footer-brand span { color: var(--gold-light); font-style: italic; }
-.footer-text { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.75; }
-.footer-col h4 {
-  font-size: 11px; font-weight: 500; color: var(--gold-light);
-  text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px;
-}
-.footer-col a, .footer-col p {
-  font-size: 13px; color: rgba(255,255,255,0.55);
-  text-decoration: none; line-height: 2; display: block;
-  transition: color .2s;
-}
-.footer-col a:hover { color: var(--gold-light); }
-.footer-bot {
-  max-width: 1200px; margin: 26px auto 0;
-  font-size: 12px; color: rgba(255,255,255,0.32);
-  display: flex; justify-content: space-between;
-  gap: 20px; flex-wrap: wrap;
-}
-
-/* RESPONSIVE */
-@media (max-width: 1000px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 44px; }
-  .why-grid, .how-grid { grid-template-columns: repeat(2, 1fr); }
-  .review-grid { grid-template-columns: 1fr; }
-  .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .footer-inner { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 700px) {
-  nav { padding: 0 18px; }
-  .nav-links { display: none; }
-  .hero { padding: 110px 20px 70px; }
-  .hero h1 { font-size: 36px; }
-  section { padding: 70px 20px; }
-  .why-grid, .how-grid { grid-template-columns: 1fr; }
-  .dest-grid { grid-template-columns: 1fr; }
-  .form-grid { grid-template-columns: 1fr; }
-  .quote-form-wrap { padding: 26px; }
-  .contact-bar { padding: 22px; gap: 18px; flex-direction: column; }
-  .footer-inner { grid-template-columns: 1fr; gap: 30px; }
-  .brand-strip-inner { flex-direction: column; align-items: flex-start; }
-  .brand-list { justify-content: flex-start; gap: 24px; }
-}
-</style>
-<script>
-(function(){
-  var photos = [
-    'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=80&fit=crop&crop=center', // luxury resort pool
-    'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1920&q=80&fit=crop&crop=center', // infinity pool ocean
-    'https://images.unsplash.com/photo-1540541338537-71acf7e3b8cb?w=1920&q=80&fit=crop&crop=center', // tropical resort pool
-    'https://images.unsplash.com/photo-1439130490301-25e322d88054?w=1920&q=80&fit=crop&crop=center', // beach resort chairs
-    'https://images.unsplash.com/photo-1582610116397-edb318620f90?w=1920&q=80&fit=crop&crop=center', // infinity pool sunset
-    'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=1920&q=80&fit=crop&crop=center', // beach house ocean view
-    'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=1920&q=80&fit=crop&crop=center', // ocean infinity pool
-    'https://images.unsplash.com/photo-1568084680786-a84f91d1153c?w=1920&q=80&fit=crop&crop=center', // luxury pool villa
-    'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1920&q=80&fit=crop&crop=center', // resort beach sunset
-    'https://images.unsplash.com/photo-1535913989690-f90e1c2d4cfa?w=1920&q=80&fit=crop&crop=center'  // infinity pool ocean view
-  ];
-  var pick = photos[Math.floor(Math.random() * photos.length)];
-  document.documentElement.style.setProperty('--hero-bg', "url('" + pick + "')");
-})();
-</script>
+    /* ───── RESPONSIVE ───── */
+    @media (max-width: 900px) {
+      .hero-inner { flex-direction: column; padding: 40px 20px; gap: 28px; }
+      .form-card { width: 100%; }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-cell { border-right: none; }
+      .why-cell:nth-child(3) { border-bottom: 1px solid #e4eaf0; }
+      .steps-row, .deals-grid, .testi-grid { grid-template-columns: 1fr; }
+      .spec-inner { flex-direction: column; text-align: center; }
+      .spec-tags { justify-content: center; }
+      .tb-item { padding: 11px 16px; font-size: 11.5px; }
+      nav { padding: 12px 20px; }
+      .nav-links a:not(.nav-btn) { display: none; }
+      .inner, .steps-inner { padding: 50px 20px; }
+    }
+  </style>
 </head>
 <body>
 
+<!-- ── NAV ── -->
 <nav>
-  <a href="/" class="nav-logo">
+  <a href="#" class="logo">
+    <div class="logo-box">R</div>
     <span class="logo-text">Resort Rental <span>Direct</span></span>
   </a>
-  <ul class="nav-links">
-    <li><a href="#why">Why us</a></li>
-    <li><a href="#how">How it works</a></li>
-    <li><a href="#destinations">Destinations</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="blog.html">Blog</a></li>
-  </ul>
-  <a href="#quote" class="nav-cta">Request a quote</a>
+  <div class="nav-links">
+    <a href="#why">High leads</a>
+    <a href="#how">Conversion</a>
+    <a href="#deals">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#quote" class="nav-btn">Get a high leads</a>
+  </div>
 </nav>
 
-<section class="hero">
+<!-- ── HERO ── -->
+<section class="hero" id="quote">
+  <div class="hero-photo"></div>
   <div class="hero-inner">
-    <div>
-      <div class="hero-eyebrow">Est. 2015 · Orlando, Florida</div>
-      <h1>Luxury resorts at <em>owner-direct</em> rates.</h1>
-      <p class="hero-sub">Marriott, Hilton, Wyndham, Hyatt, Disney, Westin — at a fraction of nightly rates, booked directly through verified owners. No booking fees. No marketplace runaround.</p>
 
-      <div class="hero-promises">
-        <div class="hero-promise">
-          <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-          Same-day quotes on weekdays — typically within four hours
+    <div class="hero-copy">
+      <p class="hero-eyebrow">Tired of Endless Searching?</p>
+      <h1>
+        Get Your Luxury<br />
+        Resort Suite For<br />
+        <span class="blue">50–70% Less.</span>
+      </h1>
+      <p>
+        We access private owner inventory at Marriott, Hilton, Disney, Wyndham &amp; more.
+        No platform fees. Just the 3 best options, verified by a real human broker,
+        delivered to your inbox.
+      </p>
+      <div class="brand-row">
+        <span class="brand-pill">Marriott</span>
+        <span class="brand-pill">Hilton</span>
+        <span class="brand-pill">Wyndham</span>
+        <span class="brand-pill">Disney</span>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="fc-head">
+        <p class="qs">Quick Start</p>
+        <h2>Get Your Expert Quote<small>(Under 4 Hours)</small></h2>
+      </div>
+      <form class="fc-body" action="https://formspree.io/f/xvzljbag" method="POST" onsubmit="fireConversion()">
+        <input type="hidden" name="_replyto" value="sales@resortrentaldirect.com" />
+        <input type="hidden" name="_subject" value="New Resort Rental Lead – Resort Rental Direct" />
+        <input type="text" name="destination" placeholder="Where are you looking to go?" required />
+        <div class="fc-row">
+          <input type="text" name="checkin" placeholder="Check-in Date"
+            onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" />
+          <input type="text" name="checkout" placeholder="Check-out Date"
+            onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" />
         </div>
-        <div class="hero-promise">
-          <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-          Eleven-plus years of operating history, hundreds of bookings
-        </div>
-        <div class="hero-promise">
-          <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-          Real specialists, written confirmations, no platform shuffle
-        </div>
-      </div>
-
-      <div class="hero-cta-row">
-        <a href="#quote" class="btn-primary">Request a quote →</a>
-        <a href="#how" class="btn-secondary">How it works</a>
-      </div>
-    </div>
-
-    <div class="trust-card">
-      <h3>By the numbers</h3>
-      <div class="trust-sub">Resort Rental Direct · Est. 2015</div>
-      <div class="trust-stats">
-        <div class="trust-stat"><div class="ts-num">11+</div><div class="ts-lbl">years matching travelers with resort rentals</div></div>
-        <div class="trust-stat"><div class="ts-num">80+</div><div class="ts-lbl">branded resort properties in our network</div></div>
-        <div class="trust-stat"><div class="ts-num">&lt;4 hr</div><div class="ts-lbl">typical quote turnaround on weekdays</div></div>
-        <div class="trust-stat"><div class="ts-num">$0</div><div class="ts-lbl">booking fees, ever</div></div>
-      </div>
-      <div class="trust-foot">
-        Based in Orlando, FL · Est. 2015
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="brand-strip">
-  <div class="brand-strip-inner">
-    <div class="brand-label">Resort Networks We Work With</div>
-    <div class="brand-list">
-      <span class="brand-item">Marriott</span>
-      <span class="brand-item">Hilton</span>
-      <span class="brand-item">Wyndham</span>
-      <span class="brand-item">Hyatt</span>
-      <span class="brand-item">Disney</span>
-      <span class="brand-item">Westin</span>
-      <span class="brand-item">Bluegreen</span>
-      <span class="brand-item">Diamond</span>
-    </div>
-  </div>
-</div>
-
-<section id="why">
-  <div class="section-inner">
-    <div class="section-eyebrow">Why Resort Rental Direct</div>
-    <h2 class="section-title">A real broker behind <em>every</em> booking.</h2>
-    <p class="section-sub">Owner-direct timeshare rentals have existed for years — but the experience usually feels like a marketplace lottery. We replace the lottery with a specialist.</p>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-        <h3>Same-day on weekdays</h3>
-        <p>Quotes typically returned within four hours during business hours, with 2-3 matched options and full resort details.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.5 0 4.76 1.02 6.4 2.66"/></svg></div>
-        <h3>Confirmed inventory only</h3>
-        <p>We work exclusively with verified owners and 4 &amp; 5-star branded properties. Reservations confirmed in writing before you pay.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <h3>Zero booking fees</h3>
-        <p>What you see is the price. No service fees, no resort upcharges from us, no surprises at checkout.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
-        <h3>Real humans, every time</h3>
-        <p>You get a named specialist, not a chatbot or ticket queue. Direct phone, direct email, written confirmation.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="how">
-  <div class="section-inner">
-    <div class="section-eyebrow">The Process</div>
-    <h2 class="section-title">Four steps. Real specialists. <em>No platform shuffle.</em></h2>
-
-    <div class="how-grid">
-      <div class="how-step"><div class="how-num">i.</div><h3>Tell us what you want</h3><p>Destination, dates, party size, preferred resort if you have one. Two minutes, no commitment.</p></div>
-      <div class="how-step"><div class="how-num">ii.</div><h3>We pull options</h3><p>Our specialists search verified owner inventory across our resort networks and send you 2-3 matches with full pricing.</p></div>
-      <div class="how-step"><div class="how-num">iii.</div><h3>You pick, we confirm</h3><p>You choose. We secure the reservation and send written confirmation from the resort itself, in your name.</p></div>
-      <div class="how-step"><div class="how-num">iv.</div><h3>Show up and check in</h3><p>Walk into a 4 or 5-star resort villa or condo for a fraction of nightly rates. Full kitchen, full amenities.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="destinations">
-  <div class="section-inner">
-    <div class="section-eyebrow">Where We Book</div>
-    <h2 class="section-title">Top destinations our specialists <em>know best.</em></h2>
-    <p class="section-sub">A working sample. We have access to 80+ branded properties beyond this list.</p>
-
-    <div class="dest-grid">
-      <div class="dest-card">
-        <img class="dest-thumb" src="https://images.unsplash.com/photo-1575089776834-8be34696ffb9?w=600&q=80&fit=crop&crop=center" alt="Orlando resort pool" loading="lazy" />
-        <div class="dest-body"><h3>Orlando &amp; Disney</h3><p>Marriott Grande Vista, Wyndham Bonnet Creek, Disney Vacation Club, Hilton Sea World</p></div>
-      </div>
-      <div class="dest-card">
-        <img class="dest-thumb" src="https://images.unsplash.com/photo-1542259009477-d625272157b7?w=600&q=80&fit=crop&crop=center" alt="Hawaii beach" loading="lazy" />
-        <div class="dest-body"><h3>Hawaii</h3><p>Marriott Maui Ocean Club, Hilton Hawaiian Village, Westin Ka'anapali, Hyatt Ka'anapali</p></div>
-      </div>
-      <div class="dest-card">
-        <img class="dest-thumb" src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=600&q=80&fit=crop&crop=center" alt="Aruba Caribbean beach" loading="lazy" />
-        <div class="dest-body"><h3>Aruba &amp; Caribbean</h3><p>Marriott Aruba Surf Club, Divi Aruba, Atlantis Bahamas, St. Kitts properties</p></div>
-      </div>
-      <div class="dest-card">
-        <img class="dest-thumb" src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&q=80&fit=crop&crop=center" alt="Ski mountain resort" loading="lazy" />
-        <div class="dest-body"><h3>Ski &amp; Mountain</h3><p>Lake Tahoe, Vail, Breckenridge (Hilton Valdoro), Park City (Hilton Sunrise)</p></div>
-      </div>
-      <div class="dest-card">
-        <img class="dest-thumb" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80&fit=crop&crop=center" alt="Coastal beach USA" loading="lazy" />
-        <div class="dest-body"><h3>Coastal U.S.</h3><p>Myrtle Beach, Daytona Beach, Hilton Head, Destin, Panama City Beach, San Diego</p></div>
-      </div>
-      <div class="dest-card">
-        <img class="dest-thumb" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80&fit=crop&crop=center" alt="City skyline hotel" loading="lazy" />
-        <div class="dest-body"><h3>City &amp; Other</h3><p>Las Vegas, Washington D.C. (Hilton Club), Branson, Gatlinburg, Cabo San Lucas, Cancún</p></div>
-      </div>
-    </div>
-
-    <div class="dest-extra"><strong>Don't see your destination?</strong> Our network covers properties across the U.S., the Caribbean, Mexico, and select international markets. Tell us where you want to go and we'll see what's available.</div>
-
-    <details class="all-props">
-      <summary class="all-props-toggle">View all 160+ properties in our network ↓</summary>
-      <div class="all-props-grid">
-        <div class="prop-group"><div class="prop-brand">Diamond / Disney</div>Diamond Resorts Ka'anapali Beach Club · Diamond Resorts Point at Poipu · Disney's Boardwalk Villas</div>
-        <div class="prop-group"><div class="prop-brand">Divi</div>Divi Aruba Beach Resort · Divi Little Bay Beach Resort</div>
-        <div class="prop-group"><div class="prop-brand">Hilton Grand Vacations</div>Hilton Club The District Washington D.C. · Hilton Grand Vacations at Kings Land · Hilton Grand Vacations Club at Sea World · Hilton Hawaiian Village Honolulu · Hilton MarBrisa Carlsbad CA · Hilton Sunrise Lodge Park City UT · Hilton Valdoro Mountain Lodge Breckenridge CO · Ocean Enclave by HGV Myrtle Beach · The District by Hilton Club · The Residences by Hilton Club NY</div>
-        <div class="prop-group"><div class="prop-brand">Hyatt</div>Hyatt Ka'anapali Residence Club Maui · Hyatt Regency Orange County CA · Hyatt Residence Club Carmel Highlands Inn</div>
-        <div class="prop-group"><div class="prop-brand">Marriott Vacation Club</div>Marriott Aruba Ocean Club · Marriott Aruba Surf Club · Marriott Barony Beach Club Hilton Head · Marriott BeachPlace Towers Ft. Lauderdale · Marriott Canyon Villas Phoenix · Marriott Crystal Shores Marco Island · Marriott Cypress Harbour Orlando · Marriott Fairway Villas Galloway NJ · Marriott Frenchman's Cove St. Thomas · Marriott Grand Chateau Las Vegas · Marriott Grand Residence Club Lake Tahoe · Marriott Grande Ocean Hilton Head · Marriott Grande Vista Orlando · Marriott Harbour Point Hilton Head · Marriott Heritage Club Hilton Head · Marriott Kauai Beach Club · Marriott Kauai Lagoons · Marriott Ko Olina Beach Club Oahu · Marriott Lakeshore Reserve Orlando · Marriott Legends Edge Panama City · Marriott Manor Club Williamsburg · Marriott Marbella Beach Spain · Marriott Maui Ocean Club · Marriott Monarch at Sea Pines · Marriott Mountain Valley Lodge Breckenridge · Marriott Mountainside Resort Park City · Marriott Newport Coast Villas CA · Marriott Ocean Pointe Palm Beach Shores · Marriott Oceana Palms Riviera Beach · Marriott Oceanwatch Villas Myrtle Beach · Marriott Phuket Beach Club Thailand · Marriott Royal Palms Orlando · Marriott Sabal Palms Orlando · Marriott Shadow Ridge Palm Desert · Marriott Streamside at Vail · Marriott Summit Watch Park City · Marriott Surfwatch Hilton Head · Marriott Timber Lodge Breckenridge · Marriott Vacation Club Pulse Boston · Marriott Vacation Club Pulse San Diego · Marriott Vacation Club Pulse San Francisco · Marriott Vacation Club Pulse Washington DC · Marriott Village d'ile-de-France Paris · Marriott Waiohai Beach Club Kauai · Marriott Willow Ridge Branson MO</div>
-        <div class="prop-group"><div class="prop-brand">Ritz-Carlton / Westin / Sheraton</div>Ritz Carlton Club San Francisco · Ritz-Carlton Club Vail · Sheraton Broadway Plantation · Sheraton Desert Oasis Villas · Sheraton Kauai Resort · Sheraton Vistana Resort FL · Westin Desert Willow Palm Desert · Westin Ka'anapali Ocean Resort Maui · Westin Kierland Scottsdale · Westin Mission Hills Villas · Westin Nanea Ocean Villas Maui</div>
-        <div class="prop-group"><div class="prop-brand">Wyndham</div>Wyndham Anaheim · Wyndham at the Cottages Myrtle Beach · Wyndham Austin TX · Wyndham Avenue Plaza New Orleans · Wyndham Bali Hai Villas Hawaii · Wyndham Bentley Brook MA · Wyndham Bonnet Creek Orlando · Wyndham Branson at The Meadows · Wyndham Dolphin's Cove CA · Wyndham Durango CO · Wyndham Dye Villas Myrtle Beach · Wyndham Fairfield Bay AR · Wyndham Fairfield Glade TN · Wyndham Glacier Canyon WI · Wyndham Harbour Lights San Diego · Wyndham Ka Eo Kai · Wyndham Kingsgate Williamsburg · Wyndham La Belle Maison New Orleans · Wyndham Nashville · Wyndham National Harbor DC · Wyndham Ocean Boulevard Myrtle Beach · Wyndham Ocean Ridge SC · Wyndham Ocean Walk Daytona Beach · Wyndham Oceanside Pier CA · Wyndham Old Town Alexandria · Wyndham Pagosa CO · Wyndham Palm-Aire Pompano Beach · Wyndham Panama City Beach · Wyndham Park City UT · Wyndham Patriots Place Williamsburg · Wyndham Resort at Avon CO · Wyndham Royal Vista Pompano Beach · Wyndham Santa Barbara Pompano Beach · Wyndham Sapphire Valley NC · Wyndham Sea Gardens Pompano Beach · Wyndham Sea Watch Plantation Myrtle Beach · Wyndham Seaglass Tower Myrtle Beach · Wyndham Sedona AZ · Wyndham Smoky Mountains TN · Wyndham St. Thomas USVI · Wyndham Star Island Kissimmee · Wyndham Steamboat Springs CO · Wyndham Towers on the Grove Myrtle Beach · Wyndham Waikiki Beach Walk Honolulu · Wyndham Westwinds Myrtle Beach</div>
-        <div class="prop-group"><div class="prop-brand">WorldMark</div>WorldMark Anaheim CA · WorldMark Dolphin's Cove CA · WorldMark Kihei HI · WorldMark SD Mission Valley CA</div>
-        <div class="prop-group"><div class="prop-brand">Independent &amp; Other</div>Accra Beach Hotel and Spa Barbados · Aqua Palms Waikiki · Aston Waikiki Beach Tower · Capistrano SurfSide Inn · Carlsbad Seapointe Resort · Christie Lodge Beaver Creek · Daytona SeaBreeze Resort · Grand Pacific Palisades · Harborside Resort at Atlantis · Havasu Dunes Resort · Island Seas Resort Freeport · Kahana Falls Resort Lahaina · Kauai Beach Villas · Lawai Beach Resort Kauai · Maui Banyon Resort · Morritt's Tortuga Club Cayman Islands · Olympic Village Inn Lake Tahoe · Orange Lake Resort Kissimmee · Orange Tree Resort Scottsdale · Paradise Beach Villas · Paradise Village Beach Resort · Park Plaza Resort Park City · Peacock Suites · Playa Grande Park Hotel Costa Rica · Red Wolf Lakeside Lodge · Red Wolf Lodge Squaw Valley · Ridge on Sedona Golf Resort · RiverPointe Napa Valley · San Luis Bay Inn · Scottsdale Links Resort · Scottsdale Villa Mirage · Southern California Beach Club · Star Island Resort and Club FL · Sunset Cove Resort Marco Island · Tahoe Beach and Ski Club · The Carlsbad Inn · The Manhattan Club · The Plaza Resort and Spa · The Point at Poipu · The Pono Kai Resort · The Royal Kuhio · The Royal Sands Mexico · Vidanta Grand Mayan Los Cabos · Vidanta Grand Mayan Nuevo Vallarta · Vista Mirage Resort · Waikiki Shore Hawaii · Westgate Myrtle Beach · Westgate Park City UT</div>
-      </div>
-    </details>
-  </div>
-</section>
-
-<section id="reviews">
-  <div class="section-inner">
-    <div class="section-eyebrow">What Travelers Say</div>
-    <h2 class="section-title">Real reviews from <em>real bookings.</em></h2>
-    <p class="section-sub">Reviews shared by travelers who booked through Resort Rental Direct and our affiliated specialists.</p>
-
-    <div class="review-grid">
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">We booked a unit that was a 1 bedroom connected to a studio for 4 of us — very nice rooms, clean and well equipped. Westin provides a shuttle that runs to Lahaina and back. Nice pools and beach. Much less crowded than the other Kaanapali hotel locations near Whalers Village — a real plus.</p>
-        <p class="review-name"><strong>Peggy L.</strong> · Westin Ka'anapali, Maui</p>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">I just want to tell you how much I appreciate all of your tremendously capable and patient reassurances and processing of my rental. I award you an A+ for everything and would not hesitate to recommend you to others. You've been a SUPERSTAR in dealing with all of my questions.</p>
-        <p class="review-name"><strong>Barrie S.</strong> · Resort Rental Direct</p>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Kevin Curran of Resort Rental Direct was wonderful to work with. He was timely in his responses, provided realistic expectations, and offered great suggestions to make our family trip a success. We look forward to working with Kevin again in the future!</p>
-        <p class="review-name"><strong>Jen Y.</strong> · Resort Rental Direct</p>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">I would like to thank you and your company for helping us be able to use our points instead of throwing them away. To find someone who is a person that I can trust is hard to find these days because everyone wants to take advantage of you. Thank you again for being honest and kind.</p>
-        <p class="review-name"><strong>Janet Z.</strong> · Resort Rental Direct</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="section-inner">
-    <div class="section-eyebrow">Common Questions</div>
-    <h2 class="section-title">Answers, <em>before</em> you have to ask.</h2>
-    <p class="section-sub">If your question isn't here, call or email — a specialist will reply same day on weekdays.</p>
-
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary class="faq-q">How does owner-direct timeshare rental actually work?</summary>
-        <div class="faq-a">Timeshare owners often have weeks they can't use in a given year — schedule conflicts, kids' calendars, life. Rather than letting that week go to waste, they rent it. We connect them with travelers who want that resort stay. The owner gets paid for unused inventory, you get a fully furnished resort villa or condo at well below retail, and our specialists handle every detail of the booking and confirmation.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Is this legitimate? Who is behind Resort Rental Direct?</summary>
-        <div class="faq-a">Resort Rental Direct is an Orlando-based vacation rental specialist established in 2015. Eleven-plus years of operating history, hundreds of completed bookings across major branded properties. Real specialists, real confirmations, real resorts.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Why are owner-direct prices so much lower than booking the resort directly?</summary>
-        <div class="faq-a">You're booking an unused timeshare week from the original owner — not from the resort's nightly inventory. Owners price below what the resort would charge transient guests because their goal is to recover their annual maintenance fees, not turn a profit. Savings typically run 30 to 60 percent off direct booking, sometimes more.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Will I get the same resort amenities as a regular guest?</summary>
-        <div class="faq-a">Yes. You check in like any other guest and have full access to pools, restaurants, concierge, valet, and on-property amenities. The accommodations themselves are typically larger than hotel rooms — full kitchens, separate bedrooms, washer/dryer in many units. That's the point of the resort timeshare format.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">What if my dates change or the booking falls through?</summary>
-        <div class="faq-a">Confirmed bookings are guaranteed. We work directly with verified owner inventory and confirm reservations in writing before you pay. If a rare issue arises, our specialists handle the resolution directly — that's why we operate on a personal-service model rather than as a faceless platform.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">How do I pay? Is my payment protected?</summary>
-        <div class="faq-a">Payment is processed through Resort Rental Direct after your reservation is confirmed in writing. We accept major credit cards. The booking confirmation comes directly from the resort itself, in your name, before final payment is collected.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">What happens after I submit a quote request?</summary>
-        <div class="faq-a">On weekdays, expect a response from a real specialist within four hours — often the same day. We pull matching inventory, send you 2-3 options with full resort details and pricing, and answer any questions before you commit. No high-pressure sales calls, ever.</div>
-      </details>
-      <details class="faq-item">
-        <summary class="faq-q">Which resort brands and locations do you cover?</summary>
-        <div class="faq-a">Marriott Vacation Club, Hilton Grand Vacations, Wyndham, Hyatt Residence Club, Disney Vacation Club, Westin, Bluegreen, Diamond Resorts, Westgate, and others. Top destinations include Orlando, Hawaii, Aruba, the Caribbean, Las Vegas, ski markets like Tahoe and Vail, plus international properties. If you have a specific resort in mind, just ask.</div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <div class="section-inner">
-    <div class="section-eyebrow">About Us</div>
-    <h2 class="section-title">A specialist team behind <em>every quote.</em></h2>
-
-    <div class="about-grid">
-      <div class="about-text">
-        <img class="about-photo" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=900&q=80&fit=crop&crop=center" alt="Couple relaxing at luxury resort" loading="lazy" />
-        <p><strong>Resort Rental Direct is an Orlando-based vacation rental specialist founded in 2015.</strong> We've spent the last eleven-plus years matching travelers with luxury resort rentals at owner-direct rates.</p>
-
-        <p>What started as a small boutique operation has grown into a network spanning 80-plus branded resort properties — Marriott, Hilton, Wyndham, Hyatt, Disney, Westin, and others — across the U.S., the Caribbean, Mexico, and select international markets.</p>
-
-        <p>What we don't do: replace human service with algorithms. Every quote you receive is pulled and reviewed by a specialist. Every reservation is confirmed in writing before you pay. Every question gets a same-day answer on weekdays. That's how vacation booking should work.</p>
-
-        <p>Based in Orlando, Florida. Bookings worldwide.</p>
-      </div>
-
-      <div class="about-card">
-        <h3>The basics</h3>
-        <div class="about-stats">
-          <div class="about-stat"><div class="as-num">2015</div><div class="as-lbl">Resort Rental Direct founded</div></div>
-          <div class="about-stat"><div class="as-num">11+</div><div class="as-lbl">years of operating history</div></div>
-          <div class="about-stat"><div class="as-num">80+</div><div class="as-lbl">branded resort properties in network</div></div>
-          <div class="about-stat"><div class="as-num">100s</div><div class="as-lbl">of completed bookings</div></div>
-          <div class="about-stat"><div class="as-num">FL</div><div class="as-lbl">Orlando-based, U.S.-registered LLC</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="quote">
-  <div class="quote-inner">
-    <div class="section-eyebrow">Request a Quote</div>
-    <h2 class="section-title">Tell us what you want. <em>We'll do the rest.</em></h2>
-    <p class="section-sub">Free, no commitment, no high-pressure follow-up. A specialist will reply within hours during business hours.</p>
-
-    <div class="quote-form-wrap">
-      <form id="quoteForm">
-        <div class="form-grid">
-          <div class="f-field">
-            <label>First name *</label>
-            <input type="text" name="fname" placeholder="Jane" required />
-          </div>
-          <div class="f-field">
-            <label>Last name *</label>
-            <input type="text" name="lname" placeholder="Smith" required />
-          </div>
-          <div class="f-field">
-            <label>Email address *</label>
-            <input type="email" name="email" placeholder="jane@email.com" required />
-          </div>
-          <div class="f-field">
-            <label>Phone number *</label>
-            <input type="tel" name="phone" placeholder="(555) 123-4567" required />
-          </div>
-          <div class="f-field full">
-            <label>Destination or preferred resort</label>
-            <input type="text" name="destination" placeholder="e.g. Marriott Maui, Disney World, Hawaii, Aruba…" list="resort-list" autocomplete="off" />
-            <datalist id="resort-list">
-              <option value="Accra Beach Hotel And Spa, Barbados"/>
-              <option value="Aqua Palms Waikiki Resort, HI"/>
-              <option value="Aston Waikiki Beach Tower"/>
-              <option value="Capistrano SurfSide Inn"/>
-              <option value="Carlsbad Seapointe Resort"/>
-              <option value="Christie Lodge, Beaver Creek"/>
-              <option value="Daytona SeaBreeze Resort, Daytona Beach, FL"/>
-              <option value="Diamond Resorts, Ka'anapali Beach Club"/>
-              <option value="Diamond Resorts, Point at Poipu"/>
-              <option value="Disney's Boardwalk Villas"/>
-              <option value="Divi Aruba Beach Resort"/>
-              <option value="Divi Little Bay Beach Resort"/>
-              <option value="Grand Pacific Palisades"/>
-              <option value="Harborside Resort at Atlantis"/>
-              <option value="Havasu Dunes Resort"/>
-              <option value="Hilton Club The District Washington D.C."/>
-              <option value="Hilton Grand Vacations at Kings Land"/>
-              <option value="Hilton Grand Vacations Club at Sea World"/>
-              <option value="Hilton Hawaiian Village, Honolulu, HI"/>
-              <option value="Hilton MarBrisa, Carlsbad, CA"/>
-              <option value="Hilton Sunrise Lodge, Park City, UT"/>
-              <option value="Hilton Valdoro Mountain Lodge, Breckenridge, CO"/>
-              <option value="Hyatt Ka'anapali Residence Club, Maui, HI"/>
-              <option value="Hyatt Regency Orange County, CA"/>
-              <option value="Hyatt Residence Club Carmel, Highlands Inn"/>
-              <option value="Island Seas Resort Freeport"/>
-              <option value="Kahana Falls Resort, Lahaina, HI"/>
-              <option value="Kauai Beach Villas, HI"/>
-              <option value="Lawai Beach Resort, Kauai, HI"/>
-              <option value="Marriott Aruba Ocean Club, Palm Bch. Aruba"/>
-              <option value="Marriott Aruba Surf Club, Palm Bch. Aruba"/>
-              <option value="Marriott Barony Beach Club, Hilton Head, SC"/>
-              <option value="Marriott BeachPlace Towers, Ft. Lauderdale"/>
-              <option value="Marriott Canyon Villas, Phoenix, AZ"/>
-              <option value="Marriott Crystal Shores, Marco Island, FL"/>
-              <option value="Marriott Cypress Harbour, Orlando, FL"/>
-              <option value="Marriott Fairway Villas, Galloway, NJ"/>
-              <option value="Marriott Frenchman's Cove, St. Thomas, USVI"/>
-              <option value="Marriott Grand Chateau, Las Vegas, NV"/>
-              <option value="Marriott Grand Residence Club, Lake Tahoe, CA"/>
-              <option value="Marriott Grande Ocean, Hilton Head, SC"/>
-              <option value="Marriott Grande Vista, Orlando, FL"/>
-              <option value="Marriott Harbour Point, Hilton Head, SC"/>
-              <option value="Marriott Heritage Club, Hilton Head, SC"/>
-              <option value="Marriott Kauai Beach Club, HI"/>
-              <option value="Marriott Kauai Lagoons"/>
-              <option value="Marriott Ko Olina Beach Club, Oahu, HI"/>
-              <option value="Marriott Lakeshore Reserve, Orlando, FL"/>
-              <option value="Marriott Legends Edge, Panama City, FL"/>
-              <option value="Marriott Manor Club, Williamsburg, VA"/>
-              <option value="Marriott Marbella Beach, Spain"/>
-              <option value="Marriott Maui Ocean Club, HI"/>
-              <option value="Marriott Monarch at Sea Pines, Hilton Head, SC"/>
-              <option value="Marriott Mountain Valley Lodge, Breckenridge, CO"/>
-              <option value="Marriott Mountainside Resort, Park City, UT"/>
-              <option value="Marriott Newport Coast Villas, CA"/>
-              <option value="Marriott Ocean Pointe, Palm Bch. Shores, FL"/>
-              <option value="Marriott Oceana Palms, Riviera Bch., FL"/>
-              <option value="Marriott Oceanwatch Villas, Myrtle Bch., SC"/>
-              <option value="Marriott Phuket Beach Club, Thailand"/>
-              <option value="Marriott Royal Palms, Orlando, FL"/>
-              <option value="Marriott Sabal Palms, Orlando, FL"/>
-              <option value="Marriott Shadow Ridge, Palm Desert, CA"/>
-              <option value="Marriott Streamside at Vail, CO"/>
-              <option value="Marriott Summit Watch, Park City, CO"/>
-              <option value="Marriott Surfwatch, Hilton Head, SC"/>
-              <option value="Marriott Timber Lodge, Breckenridge, CO"/>
-              <option value="Marriott Vacation Club Pulse at Custom House, Boston"/>
-              <option value="Marriott Vacation Club Pulse at San Diego, CA"/>
-              <option value="Marriott Vacation Club Pulse at San Francisco, CA"/>
-              <option value="Marriott Vacation Club Pulse at The Mayflower, DC"/>
-              <option value="Marriott Village d'ile-de-France, Paris"/>
-              <option value="Marriott Waiohai Beach Club, Kauai, HI"/>
-              <option value="Marriott's Willow Ridge, Branson, MO"/>
-              <option value="Maui Banyon Resort, HI"/>
-              <option value="Morritt's Tortuga Club, Cayman Islands"/>
-              <option value="Ocean Enclave by HGV, Myrtle Beach, SC"/>
-              <option value="Olympic Village Inn, Lake Tahoe"/>
-              <option value="Orange Lake Resort, Kissimmee"/>
-              <option value="Orange Tree Resort, Scottsdale, AZ"/>
-              <option value="Paradise Beach Villas"/>
-              <option value="Paradise Village Beach Resort"/>
-              <option value="Park Plaza Resort, Park City, UT"/>
-              <option value="Peacock Suites"/>
-              <option value="Playa Grande Park Hotel, Costa Rica"/>
-              <option value="Red Wolf Lakeside Lodge"/>
-              <option value="Red Wolf Lodge Squaw Valley"/>
-              <option value="Ridge on Sedona Golf Resort"/>
-              <option value="Ritz Carlton Club, San Francisco, CA"/>
-              <option value="Ritz-Carlton Club Vail, CO"/>
-              <option value="RiverPointe Napa Valley"/>
-              <option value="San Luis Bay Inn"/>
-              <option value="Scottsdale Links Resort"/>
-              <option value="Scottsdale Villa Mirage"/>
-              <option value="Sheraton Broadway Plantation Resort Villas"/>
-              <option value="Sheraton Desert Oasis Villas"/>
-              <option value="Sheraton Kauai Resort"/>
-              <option value="Sheraton Vistana Resort, FL"/>
-              <option value="Southern California Beach Club, CA"/>
-              <option value="Star Island Resort and Club, FL"/>
-              <option value="Sunset Cove Resort, Marco Island, FL"/>
-              <option value="Tahoe Beach and Ski Club"/>
-              <option value="The Carlsbad Inn"/>
-              <option value="The District by Hilton Club"/>
-              <option value="The Manhattan Club"/>
-              <option value="The Plaza Resort and Spa"/>
-              <option value="The Point at Poipu"/>
-              <option value="The Pono Kai Resort"/>
-              <option value="The Residences by Hilton Club, NY"/>
-              <option value="The Royal Kuhio"/>
-              <option value="The Royal Sands, Mexico"/>
-              <option value="Vidanta Grand Mayan Los Cabos, Mexico"/>
-              <option value="Vidanta Grand Mayan Nuevo Vallarta, Mexico"/>
-              <option value="Vista Mirage Resort"/>
-              <option value="Waikiki Shore, Hawaii"/>
-              <option value="Westgate Myrtle Beach Resort"/>
-              <option value="Westgate Park City, UT"/>
-              <option value="Westin Desert Willow, Palm Desert, CA"/>
-              <option value="Westin Ka'anapali Ocean Resort, Maui, HI"/>
-              <option value="Westin Kierland Resort & Spa, Scottsdale, AZ"/>
-              <option value="Westin Mission Hills Villas, Rancho Mirage, CA"/>
-              <option value="Westin Nanea Ocean Villas, Maui, HI"/>
-              <option value="WorldMark Anaheim, CA"/>
-              <option value="WorldMark Dolphin's Cove, CA"/>
-              <option value="Worldmark Kihei, HI"/>
-              <option value="WorldMark SD Mission Valley, CA"/>
-              <option value="Wyndham Anaheim, CA"/>
-              <option value="Wyndham at the Cottages, Myrtle Beach, SC"/>
-              <option value="Wyndham Austin, TX"/>
-              <option value="Wyndham Avenue Plaza, New Orleans, LA"/>
-              <option value="Wyndham Bali Hai Villas, Hawaii"/>
-              <option value="Wyndham Bentley Brook, MA"/>
-              <option value="Wyndham Bonnet Creek Resort, Orlando, FL"/>
-              <option value="Wyndham Branson at The Meadows, MO"/>
-              <option value="Wyndham Dolphin's Cove Resort, CA"/>
-              <option value="Wyndham Durango, CO"/>
-              <option value="Wyndham Dye Villas, Myrtle Beach, SC"/>
-              <option value="Wyndham Fairfield Bay, AR"/>
-              <option value="Wyndham Fairfield Glade, Crossville, TN"/>
-              <option value="Wyndham Glacier Canyon, WI"/>
-              <option value="Wyndham Governor's Green, VI"/>
-              <option value="Wyndham Harbour Lights, San Diego"/>
-              <option value="Wyndham Ka Eo Kai"/>
-              <option value="Wyndham Kingsgate, Williamsburg, VA"/>
-              <option value="Wyndham La Belle Maison, New Orleans"/>
-              <option value="Wyndham Nashville Resort, TN"/>
-              <option value="Wyndham National Harbor, DC"/>
-              <option value="Wyndham Ocean Boulevard, Myrtle Bch, SC"/>
-              <option value="Wyndham Ocean Ridge, South Carolina"/>
-              <option value="Wyndham Ocean Walk, Daytona Beach, FL"/>
-              <option value="Wyndham Oceanside Pier Resort, CA"/>
-              <option value="Wyndham Old Town Alexandria, VA"/>
-              <option value="Wyndham Pagosa, CO"/>
-              <option value="Wyndham Palm-Aire, Pompano Bch, FL"/>
-              <option value="Wyndham Panama City Beach, FL"/>
-              <option value="Wyndham Park City Resort, UT"/>
-              <option value="Wyndham Patriots Place, Williamsburg, VA"/>
-              <option value="Wyndham Resort at Avon, CO"/>
-              <option value="Wyndham Royal Vista, Pompano Bch, FL"/>
-              <option value="Wyndham Santa Barbara, Pompano Bch, FL"/>
-              <option value="Wyndham Sapphire Valley, NC"/>
-              <option value="Wyndham Sea Gardens, Pompano Bch, FL"/>
-              <option value="Wyndham Sea Watch Plantation, Myrtle Bch, SC"/>
-              <option value="Wyndham Seaglass Tower, Myrtle Bch, SC"/>
-              <option value="Wyndham Sedona, AZ"/>
-              <option value="Wyndham Smoky Mountains, TN"/>
-              <option value="Wyndham St. Thomas, USVI"/>
-              <option value="Wyndham Star Island, Kissimmee, FL"/>
-              <option value="Wyndham Steamboat Springs, CO"/>
-              <option value="Wyndham Towers on the Grove, Myrtle Bch, SC"/>
-              <option value="Wyndham Waikiki Beach Walk, Honolulu, HI"/>
-              <option value="Wyndham Westwinds, Myrtle Beach, SC"/>
-            </datalist>
-          </div>
-          <div class="f-field">
-            <label>Check-in date</label>
-            <input type="date" name="checkin" />
-          </div>
-          <div class="f-field">
-            <label>Check-out date</label>
-            <input type="date" name="checkout" />
-          </div>
-          <div class="f-field">
-            <label>Number of guests *</label>
-            <input type="number" name="guests" min="1" max="20" placeholder="e.g. 4" required />
-          </div>
-          <div class="f-field">
-            <label>Approximate budget (optional)</label>
-            <input type="text" name="budget" placeholder="e.g. $1,500 - $2,500" />
-          </div>
-          <div class="f-field full">
-            <label>Anything else we should know?</label>
-            <textarea name="notes" placeholder="Special requests, accessibility needs, preferred room layout, flexibility on dates…"></textarea>
-          </div>
-        </div>
-        <label class="flex-check">
-          <input type="checkbox" name="flexible" value="Yes" style="width:16px;height:16px;accent-color:var(--gold);" />
-          My dates are flexible (improves match quality)
-        </label>
-        <button type="submit" class="submit-btn">Request my quote</button>
-        <p class="form-note">By submitting you agree to be contacted by our specialists. We never share your information. <a href="#">Privacy policy</a></p>
+        <select name="guests">
+          <option value="" disabled selected>Guests</option>
+          <option>1–2 Guests</option>
+          <option>3–4 Guests</option>
+          <option>5–6 Guests</option>
+          <option>7+ Guests</option>
+        </select>
+        <input type="email" name="email" placeholder="Your Email Address" required />
+        <input type="tel" name="phone" placeholder="Best Phone (for text alerts)" required />
+        <button type="submit" class="fc-btn">Find My Dream Vacation<br />(Stop Searching)</button>
+        <p class="fc-trust">✔ Verified Owners &nbsp;•&nbsp; 11+ Years Experience &nbsp;•&nbsp; FL Licensed Broker</p>
       </form>
-      <div class="thank-you" id="thankYou">
-        <h3>Got it — a specialist will be in touch.</h3>
-        <p>Expect a response within hours on weekdays. Watch your inbox (and check spam, just in case).</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── TRUST BAR ── -->
+<div class="trust-bar">
+  <div class="tb-item"><span class="tb-dot"></span> FL Licensed Broker</div>
+  <div class="tb-item"><span class="tb-dot"></span> 11+ Years Experience</div>
+  <div class="tb-item"><span class="tb-dot"></span> Verified Private Owners</div>
+  <div class="tb-item"><span class="tb-dot"></span> Response in Under 4 Hours</div>
+  <div class="tb-item"><span class="tb-dot"></span> Zero Platform Fees</div>
+</div>
+
+<!-- ── WHY BROKER ── -->
+<section class="why-section" id="why">
+  <div class="inner">
+    <p class="sec-label">Why It Works</p>
+    <h2 class="sec-title">Why Using a Broker Beats Searching<br /><span class="acc">Expedia &amp; VRBO</span></h2>
+    <p class="sec-sub">The big platforms charge 15–25% fees and only show you listed inventory. We go off-market — straight to the owners.</p>
+    <div class="why-grid">
+      <div class="why-cell">
+        <div class="why-icon">⏱️</div>
+        <div>
+          <h3>Saves You 10+ Hours of Research</h3>
+          <p>Stop cross-referencing 12 tabs. We send you the 3 best verified options — you just pick one.</p>
+        </div>
+      </div>
+      <div class="why-cell">
+        <div class="why-icon">🔑</div>
+        <div>
+          <h3>Access to "Off-Market" Units</h3>
+          <p>Private owner inventory that never appears on Expedia, VRBO, or Airbnb. Better rooms, better prices.</p>
+        </div>
+      </div>
+      <div class="why-cell">
+        <div class="why-icon">💰</div>
+        <div>
+          <h3>Locked-In Owner Pricing (No Surges)</h3>
+          <p>No last-minute markups. No platform fees. The price you see is the price you pay.</p>
+        </div>
+      </div>
+      <div class="why-cell">
+        <div class="why-icon">🧑‍💼</div>
+        <div>
+          <h3>Human Specialist Matches You (No Chatbots)</h3>
+          <p>A real FL-licensed broker reviews your request personally and curates options for your exact trip.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="contact-bar">
-  <a href="tel:+12398237286" class="contact-item">
-    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    (239) 823-7286
-  </a>
-  <a href="mailto:sales@resortrentaldirect.com" class="contact-item">
-    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-    sales@resortrentaldirect.com
-  </a>
-  <div class="contact-item">
-    <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-    Orlando, Florida
+<!-- ── HOW IT WORKS ── -->
+<section class="steps-section" id="how">
+  <div class="steps-inner">
+    <p class="sec-label">Simple 3-Step Process</p>
+    <h2 class="sec-title" style="color:#fff;">How It Works</h2>
+    <p class="sec-sub">From request to resort in under 4 hours.</p>
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Tell Us Your Trip</h3>
+        <p>Fill out the quick form — destination, dates, guests. 60 seconds, no commitment.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>We Search Our Network</h3>
+        <p>Your specialist searches private owner inventory at top resort brands — not the public listing sites.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>3 Best Options In Your Inbox</h3>
+        <p>Within 4 hours, you get 3 verified best-fit options. You pick. We book. Done.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
+<!-- ── FEATURED DEALS ── -->
+<section class="deals-section" id="deals">
+  <div class="inner">
+    <p class="sec-label">Featured Examples</p>
+    <h2 class="sec-title">Recent Deals <span class="acc">(Get Similar Rates)</span></h2>
+    <p class="sec-sub">Real rates our clients paid — not the rack rate on Expedia.</p>
+    <div class="deals-grid">
+      <div class="deal">
+        <div class="deal-img">🏖️<span class="deal-badge">Available</span></div>
+        <div class="deal-body">
+          <p class="deal-loc">Orlando, FL</p>
+          <p class="deal-name">Marriott Grande Vista – 2BR Suite</p>
+          <p class="deal-price">$1,495 <span>/ week</span></p>
+          <a href="#quote" class="deal-link">Request Quote for Availability</a>
+        </div>
+      </div>
+      <div class="deal">
+        <div class="deal-img">🌴<span class="deal-badge">Available</span></div>
+        <div class="deal-body">
+          <p class="deal-loc">Maui, HI</p>
+          <p class="deal-name">Westin Kā'anapali – 1BR Ocean View</p>
+          <p class="deal-price">$1,950 <span>/ week</span></p>
+          <a href="#quote" class="deal-link">Request Quote for Availability</a>
+        </div>
+      </div>
+      <div class="deal">
+        <div class="deal-img">🐚<span class="deal-badge">Available</span></div>
+        <div class="deal-body">
+          <p class="deal-loc">Aruba</p>
+          <p class="deal-name">Marriott Surf Club – 2BR Beachfront</p>
+          <p class="deal-price">$2,100 <span>/ week</span></p>
+          <a href="#quote" class="deal-link">Request Quote for Availability</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testi-section">
+  <div class="inner">
+    <p class="sec-label">What Our Clients Say</p>
+    <h2 class="sec-title">Real People. <span class="acc">Real Savings.</span></h2>
+    <p class="sec-sub" style="margin-bottom:36px;">Don't take our word for it.</p>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <q>I was skeptical at first, but within 3 hours I had 3 incredible options for Cancun. Saved over $900 vs. what I found on VRBO. Never booking any other way again.</q>
+        <div class="testi-who">
+          <div class="testi-av">P</div>
+          <div>
+            <p class="testi-name">Peggy L.</p>
+            <p class="testi-sub">Bradenton, FL</p>
+          </div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <q>An-for service is right! Our Westin suite was perfect. Kedin handled everything — I just showed up and enjoyed the trip. The savings were unreal.</q>
+        <div class="testi-who">
+          <div class="testi-av">D</div>
+          <div>
+            <p class="testi-name">Durin S.</p>
+            <p class="testi-sub">Resort Rental Direct Guest</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SPECIALIST ── -->
+<section class="spec-section" id="contact">
+  <div class="spec-inner">
+    <div class="spec-photo">👨‍💼</div>
+    <div class="spec-copy">
+      <p class="sec-label">Meet Your Specialist</p>
+      <h2>Kedin Curran</h2>
+      <span class="spec-role">Founder &bull; Real Orlando Office</span>
+      <p>
+        Kedin Curran is a licensed private resort vacation specialist with over 11 years
+        connecting families and travelers with premium resort accommodations at owner-direct pricing.
+        No chatbots. No call centers. When you submit a request, Kedin personally curates
+        your options within 4 hours.
+      </p>
+      <div class="spec-tags">
+        <span class="spec-tag">FL Licensed Broker</span>
+        <span class="spec-tag">11+ Years Experience</span>
+        <span class="spec-tag">Call (235) 925-7986</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BOTTOM CTA ── -->
+<section class="cta-band">
+  <h2>Stop Searching. Start Traveling.</h2>
+  <p>Get your 3 curated resort options delivered to your inbox — in under 4 hours, for free.</p>
+  <a href="#quote" class="cta-band-btn">Get My Free Expert Quote →</a>
+</section>
+
+<!-- ── FOOTER ── -->
 <footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">Resort Rental <span>Direct</span></div>
-      <p class="footer-text">Owner-direct resort rentals. Established 2015 · Orlando, Florida.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Site</h4>
-      <a href="#why">Why us</a>
-      <a href="#how">How it works</a>
-      <a href="#destinations">Destinations</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#faq">FAQ</a>
-      <a href="blog.html">Blog</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="tel:+12398237286">(239) 823-7286</a>
-      <a href="mailto:sales@resortrentaldirect.com">sales@resortrentaldirect.com</a>
-      <p>824 Lake Baldwin Ln<br />Orlando, FL 32803</p>
-    </div>
-  </div>
-  <div class="footer-bot">
-    <div>© 2026 Resort Rental Direct · All rights reserved.</div>
-    <div>All resort and brand names are trademarks of their respective owners.</div>
-  </div>
+  <p>&copy; 2026 Resort Rental Direct &bull; Real Orlando Office &bull; FL Licensed Broker &bull; <a href="#">Privacy Policy</a></p>
 </footer>
 
 <script>
-  const today = new Date().toISOString().split('T')[0];
-  const checkinEl = document.querySelector('input[name="checkin"]');
-  const checkoutEl = document.querySelector('input[name="checkout"]');
-  if (checkinEl) {
-    checkinEl.min = today;
-    checkoutEl.min = today;
-    checkinEl.addEventListener('change', function () {
-      checkoutEl.min = this.value;
-      if (checkoutEl.value && checkoutEl.value < this.value) checkoutEl.value = this.value;
+  function fireConversion() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-1071278490'
     });
   }
-
-  document.getElementById('quoteForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const btn = this.querySelector('.submit-btn');
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-
-    fetch('https://formspree.io/f/xpqoopwe', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        source: 'resortrentaldirect.com',
-        name: this.fname.value + ' ' + this.lname.value,
-        email: this.email.value,
-        phone: this.phone.value,
-        destination: this.destination.value,
-        checkin: this.checkin.value,
-        checkout: this.checkout.value,
-        guests: this.guests.value,
-        budget: this.budget.value,
-        flexible_dates: this.flexible.checked ? 'Yes' : 'No',
-        notes: this.notes.value
-      })
-    }).then(function (r) {
-      if (r.ok) {
-        document.getElementById('quoteForm').style.display = 'none';
-        document.getElementById('thankYou').style.display = 'block';
-      } else {
-        btn.textContent = 'Request my quote';
-        btn.disabled = false;
-        alert('Sorry — there was a problem sending your request. Please call (239) 823-7286 or email sales@resortrentaldirect.com.');
-      }
-    }).catch(function () {
-      btn.textContent = 'Request my quote';
-      btn.disabled = false;
-      alert('Sorry — there was a problem sending your request. Please call (239) 823-7286 or email sales@resortrentaldirect.com.');
-    });
-  });
 </script>
-
 </body>
 </html>
