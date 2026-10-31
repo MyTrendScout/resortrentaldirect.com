@@ -447,8 +447,8 @@
               </select>
             </div>
 
-            <input type="hidden" name="_type" value="Renter" />
-            <input type="hidden" name="_source" value="Landing Page" />
+            <input type="hidden" name="type" value="Renter" />
+            <input type="hidden" name="source" value="resortrentaldirect.com/vacation (AK Outdoor)" />
 
             <button type="submit" class="submit-btn" id="submitBtn">
               Get My Free Quote →
@@ -501,15 +501,18 @@
       btn.textContent = 'Sending...';
 
       const formData = new FormData(this);
+      formData.append('_subject', 'New Resort Rental Lead – AK Outdoor / RRD');
+      formData.append('_template', 'table');
 
       try {
-        const response = await fetch('https://formspree.io/f/xpqoopwe', {
+        const response = await fetch('https://formsubmit.co/ajax/hello@takeholdmedia.com', {
           method: 'POST',
           body: formData,
           headers: { 'Accept': 'application/json' }
         });
 
-        if (response.ok) {
+        const result = await response.json().catch(() => ({}));
+        if (response.ok && String(result.success) === 'true') {
           // Fire conversion events
           if (typeof gtag !== 'undefined') {
             gtag('event', 'conversion', { 'send_to': 'AW-1071278490/2ONBCJzasV4QmtPp_gM' });
