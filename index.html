@@ -254,9 +254,14 @@
     .deals-section { background: var(--light); }
     .deals-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 22px;
     }
+    @media (max-width: 1100px) { .deals-grid { grid-template-columns: repeat(2, 1fr); } }
+    .deal-hot { outline: 2px solid var(--green); }
+    .deal-hot .deal-img { background: linear-gradient(135deg, #0b1e3d, #5b8db8); }
+    .deal-hot .deal-badge { background: #d9342b; }
+    .deal-note { font-size: 12px; color: var(--muted); margin-top: 4px; }
     .deal {
       background: #fff; border-radius: 10px; overflow: hidden;
       box-shadow: 0 3px 16px rgba(0,0,0,.07);
@@ -545,6 +550,16 @@
     <h2 class="sec-title">Recent Deals <span class="acc">(Get Similar Rates)</span></h2>
     <p class="sec-sub">Real rates our clients paid — not the rack rate on Expedia.</p>
     <div class="deals-grid">
+      <div class="deal deal-hot">
+        <div class="deal-img">🎿<span class="deal-badge">Christmas Week · Book Now</span></div>
+        <div class="deal-body">
+          <p class="deal-loc">Park City, UT</p>
+          <p class="deal-name">Marriott's MountainSide – Studio, Ski-In Access</p>
+          <p class="deal-price">$1,927 <span>/ 4 nights</span></p>
+          <p class="deal-note">Dec 19–23, 2026 · Sleeps 4 · Kitchenette</p>
+          <a href="https://www.go-koala.com/unit/marriotts-mountainside/studio-guest-room/512?l_id=KL468986&amp;startD=2026-12-19&amp;endD=2026-12-23" target="_blank" rel="noopener" class="deal-link">Book Now – Secure Checkout</a>
+        </div>
+      </div>
       <div class="deal">
         <div class="deal-img">🏖️<span class="deal-badge">Available</span></div>
         <div class="deal-body">
